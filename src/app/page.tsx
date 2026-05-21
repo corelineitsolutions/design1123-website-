@@ -8,7 +8,7 @@ import { QRFeature } from "@/components/sections/QRFeature";
 import { Experience } from "@/components/sections/Experience";
 import { ProcessFeatures } from "@/components/sections/ProcessFeatures";
 import { Testimonials } from "@/components/sections/Testimonials";
-import { Pricing } from "@/components/sections/Pricing";
+// import { Pricing } from "@/components/sections/Pricing";
 import { Stats } from "@/components/sections/Stats";
 import { Industries } from "@/components/sections/Industries";
 import { MediaAwards } from "@/components/sections/MediaAwards";
@@ -33,7 +33,7 @@ export default function Home() {
         <Experience />
         <ProcessFeatures />
         <Testimonials />
-        <Pricing />
+        {/* <Pricing /> */}
         <Stats />
         <MediaAwards />
         <Blog />

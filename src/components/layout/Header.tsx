@@ -69,9 +69,9 @@ export function Header() {
         </nav>
 
         <div className="hidden items-center gap-3 sm:flex">
-          <Button variant="ghost" href="#pricing" className="!px-4 !py-2">
+          {/* <Button variant="ghost" href="#pricing" className="!px-4 !py-2">
             Log in
-          </Button>
+          </Button> */}
           <Button href="#download" className="!px-5 !py-2.5">
             Get the app
           </Button>
