@@ -41,7 +41,7 @@ export function CustomFooterFeature() {
             </div>
 
             {/* Fields list */}
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {footerFields.map((field, idx) => (
                 <div key={idx} className="flex items-center gap-3 p-3.5 rounded-xl bg-white/5 border border-white/5">
                   <field.icon className="w-4 h-4 text-brand-orange" />
@@ -57,7 +57,7 @@ export function CustomFooterFeature() {
           </div>
 
           {/* Right Side: Visual Synchronization Animation */}
-          <div className="relative h-[480px] w-full flex items-center justify-center bg-bg-card/40 border border-white/5 rounded-3xl p-6 overflow-hidden">
+          <div className="relative h-[380px] sm:h-[480px] w-full flex items-center justify-center bg-bg-card/40 border border-white/5 rounded-3xl p-6 overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-tr from-brand-orange/5 to-brand-purple/5 opacity-50" />
             
             {/* Stamp Animation visualizer */}

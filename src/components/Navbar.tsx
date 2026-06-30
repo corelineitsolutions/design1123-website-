@@ -71,8 +71,9 @@ export function Navbar() {
 
         {/* Mobile Toggle */}
         <button
-          className="xl:hidden text-white"
+          className="xl:hidden text-white z-50 p-2 -mr-2 relative"
           onClick={() => setIsOpen(!isOpen)}
+          aria-label="Toggle Menu"
         >
           {isOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
@@ -81,23 +82,24 @@ export function Navbar() {
       {/* Mobile Menu */}
       {isOpen && (
         <motion.div
-          initial={{ opacity: 0, height: 0 }}
-          animate={{ opacity: 1, height: "100vh" }}
-          exit={{ opacity: 0, height: 0 }}
-          className="xl:hidden fixed inset-0 top-[72px] bg-bg-dark/95 backdrop-blur-xl z-40 flex flex-col p-6 gap-6"
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -20 }}
+          transition={{ duration: 0.3 }}
+          className="xl:hidden fixed inset-0 bg-bg-dark/98 backdrop-blur-2xl z-40 flex flex-col p-8 pt-28 gap-6 overflow-y-auto"
         >
           {navLinks.map((link) => (
             <a
               key={link.name}
               href={link.href}
               onClick={() => setIsOpen(false)}
-              className="text-xl font-medium text-white border-b border-border-glass pb-4"
+              className="text-2xl font-heading font-black text-white hover:text-brand-orange border-b border-border-glass pb-4 transition-colors"
             >
               {link.name}
             </a>
           ))}
-          <a href="https://play.google.com/store/apps/details?id=com.coreline.design1123&hl=en_IN" target="_blank" rel="noopener noreferrer" className="w-full mt-8 block">
-            <Button variant="primary" size="lg" className="w-full">
+          <a href="https://play.google.com/store/apps/details?id=com.coreline.design1123&hl=en_IN" target="_blank" rel="noopener noreferrer" className="w-full mt-6 block">
+            <Button variant="primary" size="lg" className="w-full py-4 text-base">
               Download App
             </Button>
           </a>

@@ -17,7 +17,7 @@ import { MobileStickyButton } from "@/components/ui/MobileStickyButton";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between w-full">
+    <main className="flex min-h-screen flex-col items-center justify-between w-full overflow-x-hidden">
       <Navbar />
       <div className="w-full">
         {/* Section 1 */}

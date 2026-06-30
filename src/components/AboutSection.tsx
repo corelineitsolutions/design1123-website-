@@ -30,12 +30,12 @@ export function AboutSection() {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           
           {/* Left Side: Animated Illustration Graphic */}
-          <div className="relative h-[480px] w-full flex items-center justify-center">
+          <div className="relative h-[380px] sm:h-[480px] w-full flex items-center justify-center">
             {/* Background Glow */}
             <div className="absolute w-[300px] h-[300px] bg-gradient-to-tr from-brand-pink to-brand-purple blur-[80px] opacity-20 rounded-full" />
             
             {/* Graphic Stack Container */}
-            <div className="relative w-[340px] h-[340px]">
+            <div className="relative w-[280px] h-[280px] sm:w-[340px] sm:h-[340px]">
               
               {/* Card 1: Bottom Base Template */}
               <motion.div
@@ -43,17 +43,17 @@ export function AboutSection() {
                 whileInView={{ opacity: 1, x: 0, y: 0, rotate: -6 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.8 }}
-                className="absolute inset-0 bg-[#171717] rounded-3xl border border-white/10 shadow-2xl p-6 flex flex-col justify-between"
+                className="absolute inset-0 bg-[#171717] rounded-3xl border border-white/10 shadow-2xl p-4 sm:p-6 flex flex-col justify-between"
               >
                 <div className="flex items-center justify-between">
-                  <img src="/logo.png" alt="App Logo" className="h-10 w-auto object-contain" />
-                  <div className="w-16 h-3 bg-white/10 rounded" />
+                  <img src="/logo.png" alt="App Logo" className="h-8 sm:h-10 w-auto object-contain" />
+                  <div className="w-12 sm:w-16 h-3 bg-white/10 rounded" />
                 </div>
-                <div className="space-y-3">
-                  <div className="w-full h-4 bg-white/10 rounded" />
-                  <div className="w-2/3 h-4 bg-white/10 rounded" />
+                <div className="space-y-2 sm:space-y-3">
+                  <div className="w-full h-3 sm:h-4 bg-white/10 rounded" />
+                  <div className="w-2/3 h-3 sm:h-4 bg-white/10 rounded" />
                 </div>
-                <div className="w-full h-32 bg-gradient-to-tr from-brand-orange/20 to-brand-pink/20 rounded-2xl" />
+                <div className="w-full h-24 sm:h-32 bg-gradient-to-tr from-brand-orange/20 to-brand-pink/20 rounded-2xl" />
               </motion.div>
 
               {/* Card 2: Mid Customizer overlay */}
@@ -62,20 +62,20 @@ export function AboutSection() {
                 whileInView={{ opacity: 1, x: 20, y: -20, rotate: 6 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.8, delay: 0.2 }}
-                className="absolute inset-0 bg-[#222226]/90 backdrop-blur-md rounded-3xl border border-brand-pink/30 shadow-2xl p-6 flex flex-col justify-between"
+                className="absolute inset-0 bg-[#222226]/90 backdrop-blur-md rounded-3xl border border-brand-pink/30 shadow-2xl p-4 sm:p-6 flex flex-col justify-between"
               >
                 <div className="flex items-center gap-3">
-                  <div className="w-8 h-8 rounded-full bg-brand-pink/20 flex items-center justify-center">
-                    <Sparkles className="w-4 h-4 text-brand-pink" />
+                  <div className="w-6 sm:w-8 h-6 sm:h-8 rounded-full bg-brand-pink/20 flex items-center justify-center">
+                    <Sparkles className="w-3 h-3 sm:w-4 sm:h-4 text-brand-pink" />
                   </div>
-                  <div className="w-24 h-3 bg-white/20 rounded" />
+                  <div className="w-16 sm:w-24 h-3 bg-white/20 rounded" />
                 </div>
-                <div className="w-full h-36 bg-gradient-to-tr from-brand-pink/30 to-brand-purple/30 rounded-2xl flex items-center justify-center">
-                  <span className="text-xs font-bold text-white tracking-widest uppercase">Tap to Customize</span>
+                <div className="w-full h-24 sm:h-36 bg-gradient-to-tr from-brand-pink/30 to-brand-purple/30 rounded-2xl flex items-center justify-center">
+                  <span className="text-[10px] sm:text-xs font-bold text-white tracking-widest uppercase">Tap to Customize</span>
                 </div>
                 <div className="flex justify-between items-center">
-                  <div className="w-12 h-6 bg-brand-purple/35 rounded-full" />
-                  <div className="w-12 h-6 bg-brand-pink rounded-full flex items-center justify-center text-[10px] font-bold">Apply</div>
+                  <div className="w-10 sm:w-12 h-5 sm:h-6 bg-brand-purple/35 rounded-full" />
+                  <div className="w-10 sm:w-12 h-5 sm:h-6 bg-brand-pink rounded-full flex items-center justify-center text-[9px] sm:text-[10px] font-bold">Apply</div>
                 </div>
               </motion.div>
 

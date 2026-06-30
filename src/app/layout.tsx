@@ -52,12 +52,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark scroll-smooth">
+    <html lang="en" className="dark scroll-smooth overflow-x-hidden">
       <body
         className={cn(
           inter.variable,
           spaceGrotesk.variable,
-          "antialiased min-h-screen bg-bg-dark text-white selection:bg-brand-orange/30 selection:text-white flex flex-col relative"
+          "antialiased min-h-screen bg-bg-dark text-white selection:bg-brand-orange/30 selection:text-white flex flex-col relative w-full overflow-x-hidden"
         )}
       >
         <ScrollProgress />

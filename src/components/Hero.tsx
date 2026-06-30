@@ -86,7 +86,7 @@ export function Hero() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.1 }}
-              className="text-5xl md:text-7xl font-heading font-black leading-[1.05] tracking-tight"
+              className="text-4xl sm:text-5xl md:text-7xl font-heading font-black leading-[1.05] tracking-tight"
             >
               Create Stunning <br />
               <span className="text-gradient">Designs in Minutes.</span>
@@ -96,7 +96,7 @@ export function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="text-lg md:text-xl text-text-secondary max-w-xl leading-relaxed"
+              className="text-base sm:text-lg md:text-xl text-text-secondary max-w-xl leading-relaxed"
             >
               Access thousands of professionally designed ready-to-use templates for businesses, personal events, and political campaigns—all in one powerful application.
             </motion.p>
@@ -105,15 +105,15 @@ export function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.3 }}
-              className="flex flex-wrap gap-4"
+              className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto"
             >
-              <a href="https://play.google.com/store/apps/details?id=com.coreline.design1123&hl=en_IN" target="_blank" rel="noopener noreferrer">
-                <Button size="lg" variant="primary">
+              <a href="https://play.google.com/store/apps/details?id=com.coreline.design1123&hl=en_IN" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
+                <Button size="lg" variant="primary" className="w-full">
                   Download App
                 </Button>
               </a>
-              <a href="#categories">
-                <Button size="lg" variant="outline">
+              <a href="#categories" className="w-full sm:w-auto">
+                <Button size="lg" variant="outline" className="w-full">
                   Explore Templates
                 </Button>
               </a>
@@ -127,10 +127,10 @@ export function Hero() {
 
             {/* Central Phone Mockup */}
             <motion.div
-              initial={{ opacity: 0, scale: 0.9, y: 50 }}
+              initial={{ opacity: 0, scale: 0.8, y: 50 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
               transition={{ duration: 1, ease: "easeOut" }}
-              className="relative w-[280px] h-[520px] bg-[#09090b] border-[10px] border-[#1f1f23] rounded-[42px] shadow-[0_25px_60px_-15px_rgba(0,0,0,0.9)] overflow-hidden z-20"
+              className="relative w-[280px] h-[520px] bg-[#09090b] border-[10px] border-[#1f1f23] rounded-[42px] shadow-[0_25px_60px_-15px_rgba(0,0,0,0.9)] overflow-hidden z-20 scale-90 sm:scale-100"
             >
               {/* Camera Notch */}
               <div className="absolute top-0 inset-x-0 h-6 bg-[#1f1f23] rounded-b-2xl w-[120px] mx-auto z-50 flex items-center justify-center">

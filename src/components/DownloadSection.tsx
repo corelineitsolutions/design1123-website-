@@ -12,7 +12,7 @@ export function DownloadSection() {
       
       <div className="container mx-auto px-6 lg:px-12 relative z-10">
         <motion.div 
-          className="max-w-4xl mx-auto glass-card p-12 md:p-20 text-center rounded-[3rem] border border-white/20 shadow-[0_0_100px_rgba(255,106,0,0.25)]"
+          className="max-w-4xl mx-auto glass-card p-6 sm:p-12 md:p-20 text-center rounded-3xl sm:rounded-[3rem] border border-white/20 shadow-[0_0_100px_rgba(255,106,0,0.25)]"
           initial={{ opacity: 0, scale: 0.95, y: 50 }}
           whileInView={{ opacity: 1, scale: 1, y: 0 }}
           viewport={{ once: true }}
