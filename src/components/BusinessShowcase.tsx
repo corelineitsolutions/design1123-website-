@@ -110,7 +110,7 @@ export function BusinessShowcase() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-3 sm:grid-cols-2 lg:grid-cols-4 gap-2 sm:gap-6">
           {cards.map((item, idx) => (
             <motion.div
               key={idx}
@@ -122,7 +122,7 @@ export function BusinessShowcase() {
               className="glass-card overflow-hidden group border border-white/5 hover:border-brand-orange/30 transition-all duration-300"
             >
               {/* Fake template preview body */}
-              <div className="w-full aspect-[4/3] p-5 flex flex-col justify-between relative overflow-hidden">
+              <div className="w-full aspect-[4/3] p-2.5 sm:p-5 flex flex-col justify-between relative overflow-hidden">
                 {/* Background image from internet */}
                 <img 
                   src={item.imageUrl} 
@@ -137,34 +137,34 @@ export function BusinessShowcase() {
                 
                 {/* Logo badge inside template */}
                 <div className="flex items-center justify-between z-10">
-                  <div className="w-6 h-6 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center">
-                    <item.icon className="w-3.5 h-3.5 text-white" />
+                  <div className="w-4 h-4 sm:w-6 sm:h-6 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center">
+                    <item.icon className="w-2.5 h-2.5 sm:w-3.5 sm:h-3.5 text-white" />
                   </div>
-                  <span className="text-[9px] bg-black/40 px-2 py-0.5 rounded-full text-white font-bold tracking-wider">OFFER</span>
+                  <span className="text-[6px] sm:text-[9px] bg-black/40 px-1 sm:px-2 py-0.5 rounded-full text-white font-bold tracking-wider">OFFER</span>
                 </div>
                 
                 {/* Template main text */}
-                <div className="space-y-1 z-10">
-                  <h3 className="text-white font-heading font-black text-lg md:text-xl leading-tight group-hover:scale-105 transition-transform duration-300 origin-left">
+                <div className="space-y-0.5 sm:space-y-1 z-10">
+                  <h3 className="text-white font-heading font-black text-[7px] sm:text-lg md:text-xl leading-tight group-hover:scale-105 transition-transform duration-300 origin-left">
                     {item.title}
                   </h3>
-                  <div className="w-12 h-1 bg-white/60 rounded" />
+                  <div className="w-6 h-0.5 sm:w-12 sm:h-1 bg-white/60 rounded" />
                 </div>
 
                 {/* Footer simulation */}
-                <div className="flex justify-between items-center text-[9px] text-white/80 z-10 pt-2 border-t border-white/10">
+                <div className="hidden sm:flex justify-between items-center text-[9px] text-white/80 z-10 pt-2 border-t border-white/10">
                   <span>📞 +91 8261090881</span>
                   <span>📍 Main Market Road</span>
                 </div>
               </div>
 
               {/* Card info header */}
-              <div className="p-4 bg-bg-card/90 flex justify-between items-center">
+              <div className="p-2 sm:p-4 bg-bg-card/90 flex justify-between items-center">
                 <div>
-                  <h4 className="font-bold text-sm text-white">{item.category}</h4>
-                  <p className="text-xs text-text-secondary mt-0.5">Editable template</p>
+                  <h4 className="font-bold text-[8px] sm:text-sm text-white truncate max-w-[65px] sm:max-w-none">{item.category}</h4>
+                  <p className="hidden sm:block text-xs text-text-secondary mt-0.5">Editable template</p>
                 </div>
-                <span className="text-xs text-brand-orange font-bold uppercase tracking-wider group-hover:translate-x-1 transition-transform">Edit →</span>
+                <span className="text-[8px] sm:text-xs text-brand-orange font-bold uppercase tracking-wider group-hover:translate-x-1 transition-transform">Edit →</span>
               </div>
             </motion.div>
           ))}

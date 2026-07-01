@@ -97,7 +97,7 @@ export function PoliticalShowcase() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-3 md:grid-cols-2 lg:grid-cols-3 gap-2 sm:gap-8">
           {cards.map((item, idx) => (
             <motion.div
               key={idx}
@@ -109,7 +109,7 @@ export function PoliticalShowcase() {
               className="glass-card overflow-hidden group border border-white/5 hover:border-brand-purple/30 transition-all duration-300"
             >
               {/* Fake template preview body */}
-              <div className="w-full aspect-[16/10] p-6 flex flex-col justify-between relative overflow-hidden">
+              <div className="w-full aspect-[16/10] p-2.5 sm:p-6 flex flex-col justify-between relative overflow-hidden">
                 {/* Background image from internet */}
                 <img 
                   src={item.imageUrl} 
@@ -124,37 +124,37 @@ export function PoliticalShowcase() {
                 
                 {/* Header elements inside template */}
                 <div className="flex items-center justify-between z-10">
-                  <span className="text-[9px] bg-black/55 px-2.5 py-0.5 rounded-full text-white font-bold tracking-wider flex items-center gap-1.5">
-                    <item.icon className="w-3 h-3 text-brand-orange" />
+                  <span className="text-[5px] sm:text-[9px] bg-black/55 px-1.5 sm:px-2.5 py-0.5 rounded-full text-white font-bold tracking-wider flex items-center gap-1 sm:gap-1.5">
+                    <item.icon className="w-2 h-2 sm:w-3 sm:h-3 text-brand-orange" />
                     CAMPAIGN
                   </span>
-                  <div className="w-7 h-7 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center font-bold text-white text-xs">
+                  <div className="w-4 h-4 sm:w-7 sm:h-7 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center font-bold text-white text-[7px] sm:text-xs">
                     ★
                   </div>
                 </div>
                 
                 {/* Template main text */}
-                <div className="space-y-1 z-10">
-                  <p className="text-xs uppercase font-bold text-white/80 tracking-widest">{item.subtitle}</p>
-                  <h3 className="text-white font-heading font-black text-xl md:text-2xl leading-tight">
+                <div className="space-y-0.5 z-10">
+                  <p className="text-[5px] sm:text-xs uppercase font-bold text-white/80 tracking-widest">{item.subtitle}</p>
+                  <h3 className="text-white font-heading font-black text-[7px] sm:text-xl md:text-2xl leading-tight">
                     {item.title}
                   </h3>
                 </div>
 
                 {/* Footer simulation */}
-                <div className="flex justify-between items-center text-[10px] text-white/95 z-10 pt-2 border-t border-white/15">
+                <div className="hidden sm:flex justify-between items-center text-[10px] text-white/95 z-10 pt-2 border-t border-white/15">
                   <span>✊ Candidate Campaign Drive</span>
                   <span>🗳️ Support Progress</span>
                 </div>
               </div>
 
               {/* Card info header */}
-              <div className="p-4 bg-bg-card/90 flex justify-between items-center">
+              <div className="p-2 sm:p-4 bg-bg-card/90 flex justify-between items-center">
                 <div>
-                  <h4 className="font-bold text-sm text-white">{item.category}</h4>
-                  <p className="text-xs text-text-secondary mt-0.5">Editable template</p>
+                  <h4 className="font-bold text-[8px] sm:text-sm text-white truncate max-w-[65px] sm:max-w-none">{item.category}</h4>
+                  <p className="hidden sm:block text-xs text-text-secondary mt-0.5">Editable template</p>
                 </div>
-                <span className="text-xs text-brand-purple font-bold uppercase tracking-wider group-hover:translate-x-1 transition-transform">Configure →</span>
+                <span className="text-[8px] sm:text-xs text-brand-purple font-bold uppercase tracking-wider group-hover:translate-x-1 transition-transform">Configure →</span>
               </div>
             </motion.div>
           ))}

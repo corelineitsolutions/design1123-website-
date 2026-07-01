@@ -88,7 +88,7 @@ export function PersonalShowcase() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-3 sm:grid-cols-2 lg:grid-cols-3 gap-2 sm:gap-8">
           {cards.map((item, idx) => (
             <motion.div
               key={idx}
@@ -100,7 +100,7 @@ export function PersonalShowcase() {
               className="glass-card overflow-hidden group border border-white/5 hover:border-brand-pink/30 transition-all duration-300"
             >
               {/* Fake template preview body */}
-              <div className="w-full aspect-[16/10] p-6 flex flex-col justify-between relative overflow-hidden">
+              <div className="w-full aspect-[16/10] p-2.5 sm:p-6 flex flex-col justify-between relative overflow-hidden">
                 {/* Background image from internet */}
                 <img 
                   src={item.imageUrl} 
@@ -115,34 +115,34 @@ export function PersonalShowcase() {
                 
                 {/* Logo badge inside template */}
                 <div className="flex items-center justify-between z-10">
-                  <div className="w-8 h-8 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center">
-                    <item.icon className="w-4 h-4 text-white" />
+                  <div className="w-5 h-5 sm:w-8 sm:h-8 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center">
+                    <item.icon className="w-3 h-3 sm:w-4 sm:h-4 text-white" />
                   </div>
-                  <span className="text-[10px] bg-white/25 px-2 py-0.5 rounded-full text-white font-bold tracking-wider">CELEBRATE</span>
+                  <span className="text-[6px] sm:text-[10px] bg-white/25 px-1 sm:px-2 py-0.5 rounded-full text-white font-bold tracking-wider">CELEBRATE</span>
                 </div>
                 
                 {/* Template main text */}
-                <div className="space-y-2 z-10">
-                  <h3 className="text-white font-heading font-black text-xl md:text-2xl leading-tight text-shadow">
+                <div className="space-y-0.5 sm:space-y-2 z-10">
+                  <h3 className="text-white font-heading font-black text-[7px] sm:text-xl md:text-2xl leading-tight text-shadow">
                     {item.title}
                   </h3>
-                  <div className="w-16 h-1 bg-white rounded" />
+                  <div className="w-6 h-0.5 sm:w-16 sm:h-1 bg-white rounded" />
                 </div>
 
                 {/* Footer simulation */}
-                <div className="flex justify-between items-center text-[10px] text-white/95 z-10 pt-2 border-t border-white/10 font-bold">
+                <div className="hidden sm:flex justify-between items-center text-[10px] text-white/95 z-10 pt-2 border-t border-white/10 font-bold">
                   <span>📅 Sunday, Dec 20</span>
                   <span>📍 Emerald Banquet Hall</span>
                 </div>
               </div>
 
               {/* Card info header */}
-              <div className="p-4 bg-bg-card/90 flex justify-between items-center">
+              <div className="p-2 sm:p-4 bg-bg-card/90 flex justify-between items-center">
                 <div>
-                  <h4 className="font-bold text-sm text-white">{item.category}</h4>
-                  <p className="text-xs text-text-secondary mt-0.5">Editable template</p>
+                  <h4 className="font-bold text-[8px] sm:text-sm text-white truncate max-w-[65px] sm:max-w-none">{item.category}</h4>
+                  <p className="hidden sm:block text-xs text-text-secondary mt-0.5">Editable template</p>
                 </div>
-                <span className="text-xs text-brand-pink font-bold uppercase tracking-wider group-hover:translate-x-1 transition-transform">Customize →</span>
+                <span className="text-[8px] sm:text-xs text-brand-pink font-bold uppercase tracking-wider group-hover:translate-x-1 transition-transform">Customize →</span>
               </div>
             </motion.div>
           ))}

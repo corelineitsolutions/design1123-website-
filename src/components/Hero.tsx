@@ -196,11 +196,11 @@ export function Hero() {
                 <div className="flex-1 grid grid-cols-2 gap-2 overflow-y-auto pb-4 scrollbar-none">
                   {[
                     { title: "MLA CAMPAIGN", grad: "from-orange-500/70 to-red-600/70", imageUrl: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=300&auto=format&fit=crop&q=80" },
-                    { title: "MEDICAL POSTER", grad: "from-blue-600/70 to-cyan-500/70", imageUrl: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=300&auto=format&fit=crop&q=80" },
-                    { title: "WEDDING INVIT", grad: "from-pink-500/70 to-rose-600/70", imageUrl: "https://images.unsplash.com/photo-1522673607200-164d1b6ce486?w=300&auto=format&fit=crop&q=80" },
-                    { title: "CAFE FLYER", grad: "from-amber-600/70 to-orange-700/70", imageUrl: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=300&auto=format&fit=crop&q=80" },
-                    { title: "RETAIL SALES", grad: "from-purple-600/70 to-indigo-600/70", imageUrl: "https://images.unsplash.com/photo-1483985988355-763728e1935b?w=300&auto=format&fit=crop&q=80" },
-                    { title: "GYM ADVERT", grad: "from-red-600/70 to-purple-800/70", imageUrl: "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?w=300&auto=format&fit=crop&q=80" },
+                    { title: "VOTE FOR PROGRESS", grad: "from-blue-600/70 to-indigo-800/70", imageUrl: "https://images.unsplash.com/photo-1540910419892-4a36d2c3266c?w=300&auto=format&fit=crop&q=80" },
+                    { title: "PUBLIC MEETING", grad: "from-purple-600/70 to-pink-600/70", imageUrl: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=300&auto=format&fit=crop&q=80" },
+                    { title: "CAMPAIGN RALLY", grad: "from-red-500/70 to-orange-600/70", imageUrl: "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=300&auto=format&fit=crop&q=80" },
+                    { title: "LEADER GREETING", grad: "from-orange-600/70 to-yellow-500/70", imageUrl: "https://images.unsplash.com/photo-1532375810709-75b1da00537c?w=300&auto=format&fit=crop&q=80" },
+                    { title: "VOLUNTEER DRIVE", grad: "from-blue-500/70 to-teal-500/70", imageUrl: "https://images.unsplash.com/photo-1559027615-cd4487a24a0b?w=300&auto=format&fit=crop&q=80" },
                   ].map((tpl, i) => (
                     <div key={i} className="aspect-[3/4] rounded-xl relative overflow-hidden p-2 flex flex-col justify-between shadow-lg">
                       {/* Template Image Background */}
@@ -239,7 +239,7 @@ export function Hero() {
                 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.8, delay: 0.5 + item.delay * 0.15 }}
-                className="absolute glass-card p-2.5 rounded-2xl border border-white/5 w-[130px] shadow-2xl z-10 hidden sm:block pointer-events-auto cursor-pointer select-none"
+                className="absolute glass-card p-2.5 rounded-2xl border border-white/5 w-[130px] shadow-2xl z-10 hidden lg:block pointer-events-auto cursor-pointer select-none"
                 style={{
                   left: item.x,
                   top: item.y,
