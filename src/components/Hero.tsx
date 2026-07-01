@@ -151,100 +151,102 @@ export function Hero() {
           </div>
 
           {/* Right Phone Mockup with floating template elements */}
-          <div className="lg:col-span-5 relative flex justify-center items-center h-[550px]">
-            {/* Rotating border aura */}
-            <div className="absolute w-[350px] h-[350px] bg-gradient-to-tr from-brand-orange to-brand-purple blur-[80px] opacity-25 rounded-full animate-pulse -translate-x-[30px]" />
+          <div className="lg:col-span-5 relative flex justify-center items-center h-[420px] sm:h-[550px] overflow-visible w-full">
+            {/* Scaling container for mobile responsiveness */}
+            <div className="relative w-full h-full flex justify-center items-center scale-[0.6] min-[400px]:scale-[0.65] min-[480px]:scale-[0.75] sm:scale-90 md:scale-95 lg:scale-100 origin-center transition-transform duration-300">
+              {/* Rotating border aura */}
+              <div className="absolute w-[350px] h-[350px] bg-gradient-to-tr from-brand-orange to-brand-purple blur-[80px] opacity-25 rounded-full animate-pulse -translate-x-[30px]" />
 
-            {/* Central Phone Mockup (shifted slightly to the left) */}
-            <motion.div
-              initial={{ opacity: 0, scale: 0.8, y: 50, x: -30 }}
-              animate={{ opacity: 1, scale: 1, y: 0, x: -30 }}
-              transition={{ duration: 1, ease: "easeOut" }}
-              className="relative w-[280px] h-[520px] bg-[#09090b] border-[10px] border-[#1f1f23] rounded-[42px] shadow-[0_25px_60px_-15px_rgba(0,0,0,0.9)] overflow-hidden z-20 scale-90 sm:scale-100"
-            >
-              {/* Camera Notch */}
-              <div className="absolute top-0 inset-x-0 h-6 bg-[#1f1f23] rounded-b-2xl w-[120px] mx-auto z-50 flex items-center justify-center">
-                <div className="w-3 h-3 rounded-full bg-black mr-2" />
-                <div className="w-12 h-1 bg-[#2f2f35] rounded-full" />
-              </div>
-
-              {/* Simulated App Screen */}
-              <div className="w-full h-full p-4 pt-10 flex flex-col bg-bg-dark text-white space-y-4">
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-1.5">
-                    <img src="/logo.png" alt="Mini Logo" className="h-6 w-auto object-contain" />
-                    <span className="text-xs font-bold font-heading">Design 1123</span>
-                  </div>
-                  <div className="w-6 h-6 rounded-full bg-white/5 flex items-center justify-center text-[10px]">👤</div>
-                </div>
-                
-                {/* Search Bar */}
-                <div className="h-8 bg-white/5 border border-white/10 rounded-full flex items-center px-3 text-[10px] text-text-secondary">
-                  🔍 Search 10,000+ templates...
-                </div>
-
-                {/* Categories Scroll */}
-                <div className="flex gap-2 overflow-x-auto scrollbar-none py-1">
-                  {["Political", "Business", "Wishes", "Festival"].map((cat, i) => (
-                    <span key={i} className={`px-3 py-1 rounded-full text-[9px] font-bold ${i === 0 ? 'bg-brand-orange text-white' : 'bg-white/5 border border-white/10 text-text-secondary'}`}>
-                      {cat}
-                    </span>
-                  ))}
-                </div>
-
-                {/* Templates Grid inside Phone */}
-                <div className="flex-1 grid grid-cols-2 gap-2 overflow-y-auto pb-4 scrollbar-none">
-                  {[
-                    { title: "MLA CAMPAIGN", grad: "from-orange-500/70 to-red-600/70", imageUrl: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=300&auto=format&fit=crop&q=80" },
-                    { title: "VOTE FOR PROGRESS", grad: "from-blue-600/70 to-indigo-800/70", imageUrl: "https://images.unsplash.com/photo-1540910419892-4a36d2c3266c?w=300&auto=format&fit=crop&q=80" },
-                    { title: "PUBLIC MEETING", grad: "from-purple-600/70 to-pink-600/70", imageUrl: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=300&auto=format&fit=crop&q=80" },
-                    { title: "CAMPAIGN RALLY", grad: "from-red-500/70 to-orange-600/70", imageUrl: "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=300&auto=format&fit=crop&q=80" },
-                    { title: "LEADER GREETING", grad: "from-orange-600/70 to-yellow-500/70", imageUrl: "https://images.unsplash.com/photo-1532375810709-75b1da00537c?w=300&auto=format&fit=crop&q=80" },
-                    { title: "VOLUNTEER DRIVE", grad: "from-blue-500/70 to-teal-500/70", imageUrl: "https://images.unsplash.com/photo-1559027615-cd4487a24a0b?w=300&auto=format&fit=crop&q=80" },
-                  ].map((tpl, i) => (
-                    <div key={i} className="aspect-[3/4] rounded-xl relative overflow-hidden p-2 flex flex-col justify-between shadow-lg">
-                      {/* Template Image Background */}
-                      <img 
-                        src={tpl.imageUrl} 
-                        alt={tpl.title} 
-                        className="absolute inset-0 w-full h-full object-cover" 
-                        loading="lazy"
-                      />
-                      {/* Tint color blend */}
-                      <div className={`absolute inset-0 bg-gradient-to-br ${tpl.grad} opacity-30 mix-blend-multiply`} />
-                      {/* Text readable overlay */}
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/35 to-black/20" />
-                      
-                      <span className="text-[7px] bg-black/50 px-1.5 py-0.5 rounded-full w-max text-white relative z-10">Template</span>
-                      <span className="text-[9px] font-heading font-black leading-tight text-white relative z-10">{tpl.title}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </motion.div>
-
-            {/* Floating Templates Around the Phone */}
-            {floatingTemplates.map((item, idx) => (
+              {/* Central Phone Mockup (shifted slightly to the left) */}
               <motion.div
-                key={idx}
-                initial={{ opacity: 0, scale: 0.8, rotate: item.rotate }}
-                whileInView={{ opacity: 0.5, scale: 1, rotate: item.rotate }}
-                whileHover={{ 
-                  scale: 1.1, 
-                  rotate: 0, 
-                  zIndex: 40,
-                  opacity: 1,
-                  boxShadow: item.glowShadow,
-                  borderColor: "rgba(255,255,255,0.3)"
-                }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.8, delay: 0.5 + item.delay * 0.15 }}
-                className="absolute glass-card p-2.5 rounded-2xl border border-white/5 w-[130px] shadow-2xl z-10 hidden lg:block pointer-events-auto cursor-pointer select-none"
-                style={{
-                  left: item.x,
-                  top: item.y,
-                }}
+                initial={{ opacity: 0, scale: 0.8, y: 50, x: -30 }}
+                animate={{ opacity: 1, scale: 1, y: 0, x: -30 }}
+                transition={{ duration: 1, ease: "easeOut" }}
+                className="relative w-[280px] h-[520px] bg-[#09090b] border-[10px] border-[#1f1f23] rounded-[42px] shadow-[0_25px_60px_-15px_rgba(0,0,0,0.9)] overflow-hidden z-20"
               >
+                {/* Camera Notch */}
+                <div className="absolute top-0 inset-x-0 h-6 bg-[#1f1f23] rounded-b-2xl w-[120px] mx-auto z-50 flex items-center justify-center">
+                  <div className="w-3 h-3 rounded-full bg-black mr-2" />
+                  <div className="w-12 h-1 bg-[#2f2f35] rounded-full" />
+                </div>
+
+                {/* Simulated App Screen */}
+                <div className="w-full h-full p-4 pt-10 flex flex-col bg-bg-dark text-white space-y-4">
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center gap-1.5">
+                      <img src="/logo.png" alt="Mini Logo" className="h-6 w-auto object-contain" />
+                      <span className="text-xs font-bold font-heading">Design 1123</span>
+                    </div>
+                    <div className="w-6 h-6 rounded-full bg-white/5 flex items-center justify-center text-[10px]">👤</div>
+                  </div>
+                  
+                  {/* Search Bar */}
+                  <div className="h-8 bg-white/5 border border-white/10 rounded-full flex items-center px-3 text-[10px] text-text-secondary">
+                    🔍 Search 10,000+ templates...
+                  </div>
+
+                  {/* Categories Grid inside Phone (4 in one row) */}
+                  <div className="grid grid-cols-4 gap-1 w-full text-center py-1">
+                    {["Political", "Business", "Wishes", "Festival"].map((cat, i) => (
+                      <span key={i} className={`px-1.5 py-1 rounded-full text-[8px] font-bold ${i === 0 ? 'bg-brand-orange text-white' : 'bg-white/5 border border-white/10 text-text-secondary'} truncate`}>
+                        {cat}
+                      </span>
+                    ))}
+                  </div>
+
+                  {/* Templates Grid inside Phone */}
+                  <div className="flex-1 grid grid-cols-2 gap-2 overflow-y-auto pb-4 scrollbar-none">
+                    {[
+                      { title: "MLA CAMPAIGN", grad: "from-orange-500/70 to-red-600/70", imageUrl: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=300&auto=format&fit=crop&q=80" },
+                      { title: "VOTE FOR PROGRESS", grad: "from-blue-600/70 to-indigo-800/70", imageUrl: "https://images.unsplash.com/photo-1540910419892-4a36d2c3266c?w=300&auto=format&fit=crop&q=80" },
+                      { title: "PUBLIC MEETING", grad: "from-purple-600/70 to-pink-600/70", imageUrl: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=300&auto=format&fit=crop&q=80" },
+                      { title: "CAMPAIGN RALLY", grad: "from-red-500/70 to-orange-600/70", imageUrl: "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=300&auto=format&fit=crop&q=80" },
+                      { title: "LEADER GREETING", grad: "from-orange-600/70 to-yellow-500/70", imageUrl: "https://images.unsplash.com/photo-1532375810709-75b1da00537c?w=300&auto=format&fit=crop&q=80" },
+                      { title: "VOLUNTEER DRIVE", grad: "from-blue-500/70 to-teal-500/70", imageUrl: "https://images.unsplash.com/photo-1559027615-cd4487a24a0b?w=300&auto=format&fit=crop&q=80" },
+                    ].map((tpl, i) => (
+                      <div key={i} className="aspect-[3/4] rounded-xl relative overflow-hidden p-2 flex flex-col justify-between shadow-lg">
+                        {/* Template Image Background */}
+                        <img 
+                          src={tpl.imageUrl} 
+                          alt={tpl.title} 
+                          className="absolute inset-0 w-full h-full object-cover" 
+                          loading="lazy"
+                        />
+                        {/* Tint color blend */}
+                        <div className={`absolute inset-0 bg-gradient-to-br ${tpl.grad} opacity-30 mix-blend-multiply`} />
+                        {/* Text readable overlay */}
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/35 to-black/20" />
+                        
+                        <span className="text-[7px] bg-black/50 px-1.5 py-0.5 rounded-full w-max text-white relative z-10">Template</span>
+                        <span className="text-[9px] font-heading font-black leading-tight text-white relative z-10">{tpl.title}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </motion.div>
+
+              {/* Floating Templates Around the Phone */}
+              {floatingTemplates.map((item, idx) => (
+                <motion.div
+                  key={idx}
+                  initial={{ opacity: 0, scale: 0.8, rotate: item.rotate }}
+                  whileInView={{ opacity: 0.5, scale: 1, rotate: item.rotate }}
+                  whileHover={{ 
+                    scale: 1.1, 
+                    rotate: 0, 
+                    zIndex: 40,
+                    opacity: 1,
+                    boxShadow: item.glowShadow,
+                    borderColor: "rgba(255,255,255,0.3)"
+                  }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.8, delay: 0.5 + item.delay * 0.15 }}
+                  className="absolute glass-card p-2.5 rounded-2xl border border-white/5 w-[130px] shadow-2xl z-10 block pointer-events-auto cursor-pointer select-none"
+                  style={{
+                    left: item.x,
+                    top: item.y,
+                  }}
+                >
                 <motion.div
                   animate={{
                     y: [0, -10, 0],
@@ -274,6 +276,7 @@ export function Hero() {
                 </motion.div>
               </motion.div>
             ))}
+            </div>
           </div>
         </div>
       </div>
