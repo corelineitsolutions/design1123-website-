@@ -17,13 +17,13 @@ export function Navbar() {
   }, [scrollY]);
 
   const navLinks = [
-    { name: "Home", href: "#home" },
-    { name: "Features", href: "#features" },
-    { name: "Categories", href: "#categories" },
-    { name: "Templates", href: "#showcases" },
-    { name: "Pricing", href: "#pricing" },
-    { name: "FAQ", href: "#faq" },
-    { name: "Contact", href: "#contact" },
+    { name: "Home", href: "/#home" },
+    { name: "Features", href: "/#features" },
+    { name: "Categories", href: "/#categories" },
+    { name: "Templates", href: "/#showcases" },
+    { name: "Pricing", href: "/#pricing" },
+    { name: "FAQ", href: "/#faq" },
+    { name: "Contact", href: "/#contact" },
   ];
 
   return (
@@ -36,7 +36,7 @@ export function Navbar() {
       transition={{ duration: 0.8, ease: "easeOut" }}
     >
       <div className="container mx-auto px-6 lg:px-12 flex items-center justify-between">
-        <a href="#" className="flex items-center gap-3 group">
+        <a href="/" className="flex items-center gap-3 group">
           <img 
             src="/logo.png" 
             alt="Design 1123 Logo" 

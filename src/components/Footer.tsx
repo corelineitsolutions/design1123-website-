@@ -1,19 +1,19 @@
 export function Footer() {
   const links = {
     Explore: [
-      { name: "Home", href: "#home" },
-      { name: "Features", href: "#features" },
-      { name: "Categories", href: "#categories" },
-      { name: "Templates", href: "#showcases" }
+      { name: "Home", href: "/#home" },
+      { name: "Features", href: "/#features" },
+      { name: "Categories", href: "/#categories" },
+      { name: "Templates", href: "/#showcases" }
     ],
     Resources: [
-      { name: "Pricing", href: "#pricing" },
-      { name: "FAQ", href: "#faq" }
+      { name: "Pricing", href: "/#pricing" },
+      { name: "FAQ", href: "/#faq" }
     ],
     Support: [
-      { name: "Contact Support", href: "#contact" },
-      { name: "Privacy Policy", href: "#" },
-      { name: "Terms of Service", href: "#" }
+      { name: "Contact Support", href: "/#contact" },
+      { name: "Privacy Policy", href: "/privacy" },
+      { name: "Terms of Service", href: "/terms" }
     ],
   };
 
