@@ -1,7 +1,7 @@
 export const BRAND = {
   name: "Design1123",
   tagline: "Your Ultimate Business Branding Studio",
-  phone: "+91 9209486151",
+  phone: "+91 8261090881",
   email: "hello@design1123.com",
   users: "2.5 million+",
 } as const;

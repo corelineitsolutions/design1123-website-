@@ -53,7 +53,16 @@ export function AboutSection() {
                   <div className="w-full h-3 sm:h-4 bg-white/10 rounded" />
                   <div className="w-2/3 h-3 sm:h-4 bg-white/10 rounded" />
                 </div>
-                <div className="w-full h-24 sm:h-32 bg-gradient-to-tr from-brand-orange/20 to-brand-pink/20 rounded-2xl" />
+                <div className="w-full h-24 sm:h-32 rounded-2xl relative overflow-hidden">
+                  <img 
+                    src="https://images.unsplash.com/photo-1542838132-92c53300491e?w=600&auto=format&fit=crop&q=80" 
+                    alt="Template base" 
+                    className="absolute inset-0 w-full h-full object-cover"
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-tr from-brand-orange/30 to-brand-pink/30 mix-blend-multiply" />
+                  <div className="absolute inset-0 bg-black/25" />
+                </div>
               </motion.div>
 
               {/* Card 2: Mid Customizer overlay */}
@@ -70,8 +79,16 @@ export function AboutSection() {
                   </div>
                   <div className="w-16 sm:w-24 h-3 bg-white/20 rounded" />
                 </div>
-                <div className="w-full h-24 sm:h-36 bg-gradient-to-tr from-brand-pink/30 to-brand-purple/30 rounded-2xl flex items-center justify-center">
-                  <span className="text-[10px] sm:text-xs font-bold text-white tracking-widest uppercase">Tap to Customize</span>
+                <div className="w-full h-24 sm:h-36 rounded-2xl relative overflow-hidden flex items-center justify-center">
+                  <img 
+                    src="https://images.unsplash.com/photo-1519741497674-611481863552?w=600&auto=format&fit=crop&q=80" 
+                    alt="Template customization preview" 
+                    className="absolute inset-0 w-full h-full object-cover"
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-tr from-brand-pink/40 to-brand-purple/40 mix-blend-multiply" />
+                  <div className="absolute inset-0 bg-black/60" />
+                  <span className="text-[10px] sm:text-xs font-bold text-white tracking-widest uppercase relative z-10">Tap to Customize</span>
                 </div>
                 <div className="flex justify-between items-center">
                   <div className="w-10 sm:w-12 h-5 sm:h-6 bg-brand-purple/35 rounded-full" />

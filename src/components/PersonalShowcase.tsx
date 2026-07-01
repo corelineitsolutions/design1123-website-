@@ -9,15 +9,69 @@ import {
 
 export function PersonalShowcase() {
   const cards = [
-    { title: "Happy Birthday Rohan!", category: "Birthday Wishes", gradient: "from-[#F44336] to-[#E91E63]", icon: Gift },
-    { title: "Aarav & Meera's Wedding", category: "Wedding Invitation", gradient: "from-[#9C27B0] to-[#C2185B]", icon: Heart },
-    { title: "25 Years of Togetherness", category: "Anniversary Greeting", gradient: "from-[#7B1FA2] to-[#FF8A00]", icon: Star },
-    { title: "Welcome Baby Shower Celebration", category: "Baby Shower Flyer", gradient: "from-[#FF6A00] to-[#E91E63]", icon: Cake },
-    { title: "New Home Housewarming", category: "Housewarming Invite", gradient: "from-[#FF8A00] to-[#F44336]", icon: Home },
-    { title: "Special Event Celebration", category: "Invitation Card", gradient: "from-[#9C27B0] to-[#7B1FA2]", icon: Mail },
-    { title: "Vibrant Diwali Greetings", category: "Festival Wishes", gradient: "from-[#FF8A00] to-[#E91E63]", icon: Sparkles },
-    { title: "Gratitude & Thank You", category: "Thank You Note", gradient: "from-[#C2185B] to-[#7B1FA2]", icon: Smile },
-    { title: "Annual Family Gathering", category: "Family Events", gradient: "from-[#FF6A00] to-[#9C27B0]", icon: Calendar }
+    { 
+      title: "Happy Birthday Rohan!", 
+      category: "Birthday Wishes", 
+      gradient: "from-[#F44336] to-[#E91E63]", 
+      icon: Gift,
+      imageUrl: "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=600&auto=format&fit=crop&q=80"
+    },
+    { 
+      title: "Aarav & Meera's Wedding", 
+      category: "Wedding Invitation", 
+      gradient: "from-[#9C27B0] to-[#C2185B]", 
+      icon: Heart,
+      imageUrl: "https://images.unsplash.com/photo-1519741497674-611481863552?w=600&auto=format&fit=crop&q=80"
+    },
+    { 
+      title: "25 Years of Togetherness", 
+      category: "Anniversary Greeting", 
+      gradient: "from-[#7B1FA2] to-[#FF8A00]", 
+      icon: Star,
+      imageUrl: "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=600&auto=format&fit=crop&q=80"
+    },
+    { 
+      title: "Welcome Baby Shower Celebration", 
+      category: "Baby Shower Flyer", 
+      gradient: "from-[#FF6A00] to-[#E91E63]", 
+      icon: Cake,
+      imageUrl: "https://images.unsplash.com/photo-1519689680058-324335c77ebe?w=600&auto=format&fit=crop&q=80"
+    },
+    { 
+      title: "New Home Housewarming", 
+      category: "Housewarming Invite", 
+      gradient: "from-[#FF8A00] to-[#F44336]", 
+      icon: Home,
+      imageUrl: "https://images.unsplash.com/photo-1513694203232-719a280e022f?w=600&auto=format&fit=crop&q=80"
+    },
+    { 
+      title: "Special Event Celebration", 
+      category: "Invitation Card", 
+      gradient: "from-[#9C27B0] to-[#7B1FA2]", 
+      icon: Mail,
+      imageUrl: "https://images.unsplash.com/photo-1507504038482-7621c5b4dff1?w=600&auto=format&fit=crop&q=80"
+    },
+    { 
+      title: "Vibrant Diwali Greetings", 
+      category: "Festival Wishes", 
+      gradient: "from-[#FF8A00] to-[#E91E63]", 
+      icon: Sparkles,
+      imageUrl: "https://images.unsplash.com/photo-1605152276897-4f618f831968?w=600&auto=format&fit=crop&q=80"
+    },
+    { 
+      title: "Gratitude & Thank You", 
+      category: "Thank You Note", 
+      gradient: "from-[#C2185B] to-[#7B1FA2]", 
+      icon: Smile,
+      imageUrl: "https://images.unsplash.com/photo-1457369804613-52c61a468e7d?w=600&auto=format&fit=crop&q=80"
+    },
+    { 
+      title: "Annual Family Gathering", 
+      category: "Family Events", 
+      gradient: "from-[#FF6A00] to-[#9C27B0]", 
+      icon: Calendar,
+      imageUrl: "https://images.unsplash.com/photo-1543807535-eceef0bc6599?w=600&auto=format&fit=crop&q=80"
+    }
   ];
 
   return (
@@ -46,8 +100,18 @@ export function PersonalShowcase() {
               className="glass-card overflow-hidden group border border-white/5 hover:border-brand-pink/30 transition-all duration-300"
             >
               {/* Fake template preview body */}
-              <div className={`w-full aspect-[16/10] bg-gradient-to-tr ${item.gradient} p-6 flex flex-col justify-between relative`}>
-                <div className="absolute inset-0 bg-black/15 group-hover:bg-black/0 transition-colors duration-300" />
+              <div className="w-full aspect-[16/10] p-6 flex flex-col justify-between relative overflow-hidden">
+                {/* Background image from internet */}
+                <img 
+                  src={item.imageUrl} 
+                  alt={item.title} 
+                  className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  loading="lazy"
+                />
+                {/* Color tint overlay */}
+                <div className={`absolute inset-0 bg-gradient-to-tr ${item.gradient} opacity-30 mix-blend-multiply`} />
+                {/* Dark readable overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-black/60 opacity-85 group-hover:opacity-75 transition-opacity duration-300" />
                 
                 {/* Logo badge inside template */}
                 <div className="flex items-center justify-between z-10">

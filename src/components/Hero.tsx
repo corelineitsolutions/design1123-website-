@@ -16,37 +16,67 @@ export function Hero() {
       title: "VOTE FOR PROGRESS",
       category: "Political Campaign",
       color: "from-blue-600 to-indigo-800",
+      glowShadow: "0 0 25px rgba(37,99,235,0.65)",
       delay: 0,
-      x: "-20%",
-      y: "15%",
-      rotate: -12,
+      x: "calc(50% - 320px)",
+      y: "10%",
+      rotate: -10,
+      imageUrl: "https://images.unsplash.com/photo-1540910419892-4a36d2c3266c?w=400&auto=format&fit=crop&q=80"
     },
     {
-      title: "FESTIVAL OFFER - 20% OFF",
-      category: "Retail Shop",
-      color: "from-brand-orange to-brand-pink",
-      delay: 1,
-      x: "115%",
-      y: "25%",
+      title: "FITNESS CLUB OPEN",
+      category: "Gym & Fitness",
+      color: "from-red-600 to-purple-800",
+      glowShadow: "0 0 25px rgba(220,38,38,0.65)",
+      delay: 1.2,
+      x: "calc(50% - 345px)",
+      y: "38%",
       rotate: 8,
+      imageUrl: "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?w=400&auto=format&fit=crop&q=80"
     },
     {
       title: "Sonia & Rahul's Wedding",
       category: "Personal Invitation",
       color: "from-rose-500 to-purple-600",
+      glowShadow: "0 0 25px rgba(244,63,94,0.65)",
       delay: 2,
-      x: "-10%",
-      y: "65%",
-      rotate: 15,
+      x: "calc(50% - 305px)",
+      y: "66%",
+      rotate: -6,
+      imageUrl: "https://images.unsplash.com/photo-1519741497674-611481863552?w=400&auto=format&fit=crop&q=80"
+    },
+    {
+      title: "FESTIVAL OFFER - 20% OFF",
+      category: "Retail Shop",
+      color: "from-brand-orange to-brand-pink",
+      glowShadow: "0 0 25px rgba(255,138,0,0.65)",
+      delay: 0.6,
+      x: "calc(50% + 130px)",
+      y: "12%",
+      rotate: 6,
+      imageUrl: "https://images.unsplash.com/photo-1472851294608-062f824d29cc?w=400&auto=format&fit=crop&q=80"
+    },
+    {
+      title: "HAPPY DIWALI GREETINGS",
+      category: "Festival Wishes",
+      color: "from-yellow-500 to-red-600",
+      glowShadow: "0 0 25px rgba(234,179,8,0.65)",
+      delay: 1.8,
+      x: "calc(50% + 155px)",
+      y: "40%",
+      rotate: -8,
+      imageUrl: "https://images.unsplash.com/photo-1605152276897-4f618f831968?w=400&auto=format&fit=crop&q=80"
     },
     {
       title: "GRAND OPENING CAFE",
       category: "Restaurant Flyer",
       color: "from-amber-500 to-red-600",
-      delay: 3,
-      x: "110%",
-      y: "70%",
-      rotate: -8,
+      glowShadow: "0 0 25px rgba(245,158,11,0.65)",
+      delay: 2.4,
+      x: "calc(50% + 115px)",
+      y: "68%",
+      rotate: 10,
+      imageUrl: "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=400&auto=format&fit=crop&q=80"
     },
   ];
 
@@ -123,12 +153,12 @@ export function Hero() {
           {/* Right Phone Mockup with floating template elements */}
           <div className="lg:col-span-5 relative flex justify-center items-center h-[550px]">
             {/* Rotating border aura */}
-            <div className="absolute w-[350px] h-[350px] bg-gradient-to-tr from-brand-orange to-brand-purple blur-[80px] opacity-25 rounded-full animate-pulse" />
+            <div className="absolute w-[350px] h-[350px] bg-gradient-to-tr from-brand-orange to-brand-purple blur-[80px] opacity-25 rounded-full animate-pulse -translate-x-[30px]" />
 
-            {/* Central Phone Mockup */}
+            {/* Central Phone Mockup (shifted slightly to the left) */}
             <motion.div
-              initial={{ opacity: 0, scale: 0.8, y: 50 }}
-              animate={{ opacity: 1, scale: 1, y: 0 }}
+              initial={{ opacity: 0, scale: 0.8, y: 50, x: -30 }}
+              animate={{ opacity: 1, scale: 1, y: 0, x: -30 }}
               transition={{ duration: 1, ease: "easeOut" }}
               className="relative w-[280px] h-[520px] bg-[#09090b] border-[10px] border-[#1f1f23] rounded-[42px] shadow-[0_25px_60px_-15px_rgba(0,0,0,0.9)] overflow-hidden z-20 scale-90 sm:scale-100"
             >
@@ -165,16 +195,28 @@ export function Hero() {
                 {/* Templates Grid inside Phone */}
                 <div className="flex-1 grid grid-cols-2 gap-2 overflow-y-auto pb-4 scrollbar-none">
                   {[
-                    { title: "MLA CAMPAIGN", grad: "from-orange-500 to-red-600" },
-                    { title: "MEDICAL POSTER", grad: "from-blue-600 to-cyan-500" },
-                    { title: "WEDDING INVIT", grad: "from-pink-500 to-rose-600" },
-                    { title: "CAFE FLYER", grad: "from-amber-600 to-orange-700" },
-                    { title: "RETAIL SALES", grad: "from-purple-600 to-indigo-600" },
-                    { title: "GYM ADVERT", grad: "from-red-600 to-purple-800" },
+                    { title: "MLA CAMPAIGN", grad: "from-orange-500/70 to-red-600/70", imageUrl: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=300&auto=format&fit=crop&q=80" },
+                    { title: "MEDICAL POSTER", grad: "from-blue-600/70 to-cyan-500/70", imageUrl: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=300&auto=format&fit=crop&q=80" },
+                    { title: "WEDDING INVIT", grad: "from-pink-500/70 to-rose-600/70", imageUrl: "https://images.unsplash.com/photo-1522673607200-164d1b6ce486?w=300&auto=format&fit=crop&q=80" },
+                    { title: "CAFE FLYER", grad: "from-amber-600/70 to-orange-700/70", imageUrl: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=300&auto=format&fit=crop&q=80" },
+                    { title: "RETAIL SALES", grad: "from-purple-600/70 to-indigo-600/70", imageUrl: "https://images.unsplash.com/photo-1483985988355-763728e1935b?w=300&auto=format&fit=crop&q=80" },
+                    { title: "GYM ADVERT", grad: "from-red-600/70 to-purple-800/70", imageUrl: "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?w=300&auto=format&fit=crop&q=80" },
                   ].map((tpl, i) => (
-                    <div key={i} className={`aspect-[3/4] bg-gradient-to-br ${tpl.grad} rounded-xl p-2 flex flex-col justify-between shadow-lg`}>
-                      <span className="text-[7px] bg-black/40 px-1.5 py-0.5 rounded-full w-max text-white">Template</span>
-                      <span className="text-[9px] font-heading font-black leading-tight text-white">{tpl.title}</span>
+                    <div key={i} className="aspect-[3/4] rounded-xl relative overflow-hidden p-2 flex flex-col justify-between shadow-lg">
+                      {/* Template Image Background */}
+                      <img 
+                        src={tpl.imageUrl} 
+                        alt={tpl.title} 
+                        className="absolute inset-0 w-full h-full object-cover" 
+                        loading="lazy"
+                      />
+                      {/* Tint color blend */}
+                      <div className={`absolute inset-0 bg-gradient-to-br ${tpl.grad} opacity-30 mix-blend-multiply`} />
+                      {/* Text readable overlay */}
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/35 to-black/20" />
+                      
+                      <span className="text-[7px] bg-black/50 px-1.5 py-0.5 rounded-full w-max text-white relative z-10">Template</span>
+                      <span className="text-[9px] font-heading font-black leading-tight text-white relative z-10">{tpl.title}</span>
                     </div>
                   ))}
                 </div>
@@ -185,15 +227,22 @@ export function Hero() {
             {floatingTemplates.map((item, idx) => (
               <motion.div
                 key={idx}
-                initial={{ opacity: 0, scale: 0.8 }}
-                whileInView={{ opacity: 1, scale: 1 }}
+                initial={{ opacity: 0, scale: 0.8, rotate: item.rotate }}
+                whileInView={{ opacity: 0.5, scale: 1, rotate: item.rotate }}
+                whileHover={{ 
+                  scale: 1.1, 
+                  rotate: 0, 
+                  zIndex: 40,
+                  opacity: 1,
+                  boxShadow: item.glowShadow,
+                  borderColor: "rgba(255,255,255,0.3)"
+                }}
                 viewport={{ once: true }}
-                transition={{ duration: 1, delay: 0.5 + item.delay * 0.2 }}
-                className={`absolute glass-card p-3 rounded-2xl border-white/15 w-[140px] shadow-2xl z-10 hidden sm:block pointer-events-none`}
+                transition={{ duration: 0.8, delay: 0.5 + item.delay * 0.15 }}
+                className="absolute glass-card p-2.5 rounded-2xl border border-white/5 w-[130px] shadow-2xl z-10 hidden sm:block pointer-events-auto cursor-pointer select-none"
                 style={{
                   left: item.x,
                   top: item.y,
-                  transform: `rotate(${item.rotate}deg)`,
                 }}
               >
                 <motion.div
@@ -207,8 +256,19 @@ export function Hero() {
                     delay: item.delay,
                   }}
                 >
-                  <div className={`w-full aspect-[4/3] bg-gradient-to-tr ${item.color} rounded-lg mb-2 flex items-center justify-center`}>
-                    <span className="text-[10px] font-heading font-black text-white text-center px-2">{item.title}</span>
+                  <div className="w-full aspect-[4/3] rounded-lg mb-2 relative overflow-hidden flex items-center justify-center">
+                    {/* Background Template Image */}
+                    <img 
+                      src={item.imageUrl} 
+                      alt={item.title} 
+                      className="absolute inset-0 w-full h-full object-cover" 
+                      loading="lazy"
+                    />
+                    {/* Gradient Overlay */}
+                    <div className={`absolute inset-0 bg-gradient-to-tr ${item.color} opacity-40 mix-blend-multiply`} />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/40 to-black/20" />
+                    
+                    <span className="text-[10px] font-heading font-black text-white text-center px-2 relative z-10 leading-tight">{item.title}</span>
                   </div>
                   <div className="text-[9px] text-brand-orange font-bold uppercase">{item.category}</div>
                 </motion.div>

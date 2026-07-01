@@ -77,7 +77,7 @@ export function CustomFooterFeature() {
                 </div>
                 {/* Simulated fields */}
                 <div className="flex justify-between items-center text-[9px] text-white">
-                  <span>📞 +91 99999 88888</span>
+                  <span>📞 +91 8261090881</span>
                   <span>📍 New Delhi, India</span>
                   <div className="w-5 h-5 bg-white/10 rounded flex items-center justify-center text-[7px]">QR</div>
                 </div>
@@ -99,13 +99,21 @@ export function CustomFooterFeature() {
               {/* Multiple Template Previews receiving the footer */}
               <div className="grid grid-cols-3 gap-3">
                 {[
-                  { name: "Retail Poster", grad: "from-[#FF8A00] to-[#E91E63]" },
-                  { name: "Political Flyer", grad: "from-[#9C27B0] to-[#7B1FA2]" },
-                  { name: "Festival Greeting", grad: "from-[#FF6A00] to-[#F44336]" }
+                  { name: "Retail Poster", grad: "from-[#FF8A00] to-[#E91E63]", imageUrl: "https://images.unsplash.com/photo-1472851294608-062f824d29cc?w=300&auto=format&fit=crop&q=80" },
+                  { name: "Political Flyer", grad: "from-[#9C27B0] to-[#7B1FA2]", imageUrl: "https://images.unsplash.com/photo-1540910419892-4a36d2c3266c?w=300&auto=format&fit=crop&q=80" },
+                  { name: "Festival Greeting", grad: "from-[#FF6A00] to-[#F44336]", imageUrl: "https://images.unsplash.com/photo-1605152276897-4f618f831968?w=300&auto=format&fit=crop&q=80" }
                 ].map((tpl, i) => (
                   <div key={i} className="glass-card aspect-[3/4] p-2 flex flex-col justify-between overflow-hidden relative group">
-                    <div className={`w-full h-[60%] bg-gradient-to-tr ${tpl.grad} rounded-lg flex items-center justify-center`}>
-                      <span className="text-[8px] font-heading font-black text-white text-center">{tpl.name}</span>
+                    <div className="w-full h-[60%] rounded-lg relative overflow-hidden flex items-center justify-center">
+                      <img 
+                        src={tpl.imageUrl} 
+                        alt={tpl.name} 
+                        className="absolute inset-0 w-full h-full object-cover"
+                        loading="lazy"
+                      />
+                      <div className={`absolute inset-0 bg-gradient-to-tr ${tpl.grad} opacity-35 mix-blend-multiply`} />
+                      <div className="absolute inset-0 bg-black/60" />
+                      <span className="text-[8px] font-heading font-black text-white text-center relative z-10 leading-tight">{tpl.name}</span>
                     </div>
 
                     {/* Stamped Brand profile animation */}
@@ -120,7 +128,7 @@ export function CustomFooterFeature() {
                       transition={{ duration: 2, repeat: Infinity, delay: i * 0.4 }}
                     >
                       <div className="flex justify-between items-center scale-90">
-                        <span>📞 +91 99...</span>
+                        <span>📞 +91 82...</span>
                         <span>📍 Delhi</span>
                       </div>
                     </motion.div>

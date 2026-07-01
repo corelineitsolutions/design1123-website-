@@ -10,18 +10,90 @@ import {
 
 export function BusinessShowcase() {
   const cards = [
-    { title: "Mobile Zone - Festive Deals", category: "Mobile Shop", gradient: "from-[#FF8A00] to-[#E91E63]", icon: Smartphone },
-    { title: "Health First Pharmacy", category: "Medical Store", gradient: "from-[#9C27B0] to-[#7B1FA2]", icon: Pill },
-    { title: "Spicy Bistro Gourmet", category: "Restaurant", gradient: "from-[#FF6A00] to-[#F44336]", icon: Utensils },
-    { title: "Grand Palace & Spa", category: "Hotel", gradient: "from-[#C2185B] to-[#9C27B0]", icon: Hotel },
-    { title: "Glow & Carats Jewellers", category: "Jewellery", gradient: "from-[#FF8A00] to-[#7B1FA2]", icon: Gem },
-    { title: "Prime Tech Electronics", category: "Electronics", gradient: "from-[#E91E63] to-[#C2185B]", icon: Cpu },
-    { title: "NextGen Computer Services", category: "Computer Shop", gradient: "from-[#FF6A00] to-[#9C27B0]", icon: Monitor },
-    { title: "Urban Fit Apparel Store", category: "Fashion", gradient: "from-[#F44336] to-[#E91E63]", icon: Shirt },
-    { title: "Mega Mart Supermarket", category: "Super Market", gradient: "from-[#FF8A00] to-[#FF6A00]", icon: ShoppingCart },
-    { title: "Builders Hardwares & Tools", category: "Hardware", gradient: "from-[#9C27B0] to-[#7B1FA2]", icon: Wrench },
-    { title: "Apex Creative Agency", category: "Agency", gradient: "from-[#E91E63] to-[#FF8A00]", icon: Briefcase },
-    { title: "Care Plus Family Clinic", category: "Clinic / Hospital", gradient: "from-[#F44336] to-[#C2185B]", icon: HeartPulse }
+    { 
+      title: "Mobile Zone - Festive Deals", 
+      category: "Mobile Shop", 
+      gradient: "from-[#FF8A00] to-[#E91E63]", 
+      icon: Smartphone,
+      imageUrl: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=600&auto=format&fit=crop&q=80"
+    },
+    { 
+      title: "Health First Pharmacy", 
+      category: "Medical Store", 
+      gradient: "from-[#9C27B0] to-[#7B1FA2]", 
+      icon: Pill,
+      imageUrl: "https://images.unsplash.com/photo-1586015555751-63bb77f4322a?w=600&auto=format&fit=crop&q=80"
+    },
+    { 
+      title: "Spicy Bistro Gourmet", 
+      category: "Restaurant", 
+      gradient: "from-[#FF6A00] to-[#F44336]", 
+      icon: Utensils,
+      imageUrl: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&auto=format&fit=crop&q=80"
+    },
+    { 
+      title: "Grand Palace & Spa", 
+      category: "Hotel", 
+      gradient: "from-[#C2185B] to-[#9C27B0]", 
+      icon: Hotel,
+      imageUrl: "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=600&auto=format&fit=crop&q=80"
+    },
+    { 
+      title: "Glow & Carats Jewellers", 
+      category: "Jewellery", 
+      gradient: "from-[#FF8A00] to-[#7B1FA2]", 
+      icon: Gem,
+      imageUrl: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=600&auto=format&fit=crop&q=80"
+    },
+    { 
+      title: "Prime Tech Electronics", 
+      category: "Electronics", 
+      gradient: "from-[#E91E63] to-[#C2185B]", 
+      icon: Cpu,
+      imageUrl: "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=600&auto=format&fit=crop&q=80"
+    },
+    { 
+      title: "NextGen Computer Services", 
+      category: "Computer Shop", 
+      gradient: "from-[#FF6A00] to-[#9C27B0]", 
+      icon: Monitor,
+      imageUrl: "https://images.unsplash.com/photo-1588508065123-287b28e013da?w=600&auto=format&fit=crop&q=80"
+    },
+    { 
+      title: "Urban Fit Apparel Store", 
+      category: "Fashion", 
+      gradient: "from-[#F44336] to-[#E91E63]", 
+      icon: Shirt,
+      imageUrl: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=600&auto=format&fit=crop&q=80"
+    },
+    { 
+      title: "Mega Mart Supermarket", 
+      category: "Super Market", 
+      gradient: "from-[#FF8A00] to-[#FF6A00]", 
+      icon: ShoppingCart,
+      imageUrl: "https://images.unsplash.com/photo-1542838132-92c53300491e?w=600&auto=format&fit=crop&q=80"
+    },
+    { 
+      title: "Builders Hardwares & Tools", 
+      category: "Hardware", 
+      gradient: "from-[#9C27B0] to-[#7B1FA2]", 
+      icon: Wrench,
+      imageUrl: "https://images.unsplash.com/photo-1581244277943-fe4a9c777189?w=600&auto=format&fit=crop&q=80"
+    },
+    { 
+      title: "Apex Creative Agency", 
+      category: "Agency", 
+      gradient: "from-[#E91E63] to-[#FF8A00]", 
+      icon: Briefcase,
+      imageUrl: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&auto=format&fit=crop&q=80"
+    },
+    { 
+      title: "Care Plus Family Clinic", 
+      category: "Clinic / Hospital", 
+      gradient: "from-[#F44336] to-[#C2185B]", 
+      icon: HeartPulse,
+      imageUrl: "https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=600&auto=format&fit=crop&q=80"
+    }
   ];
 
   return (
@@ -50,9 +122,18 @@ export function BusinessShowcase() {
               className="glass-card overflow-hidden group border border-white/5 hover:border-brand-orange/30 transition-all duration-300"
             >
               {/* Fake template preview body */}
-              <div className={`w-full aspect-[4/3] bg-gradient-to-tr ${item.gradient} p-5 flex flex-col justify-between relative`}>
-                {/* Background overlay */}
-                <div className="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors duration-300" />
+              <div className="w-full aspect-[4/3] p-5 flex flex-col justify-between relative overflow-hidden">
+                {/* Background image from internet */}
+                <img 
+                  src={item.imageUrl} 
+                  alt={item.title} 
+                  className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  loading="lazy"
+                />
+                {/* Color tint overlay */}
+                <div className={`absolute inset-0 bg-gradient-to-tr ${item.gradient} opacity-30 mix-blend-multiply`} />
+                {/* Dark readable overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-black/60 opacity-85 group-hover:opacity-75 transition-opacity duration-300" />
                 
                 {/* Logo badge inside template */}
                 <div className="flex items-center justify-between z-10">
@@ -72,7 +153,7 @@ export function BusinessShowcase() {
 
                 {/* Footer simulation */}
                 <div className="flex justify-between items-center text-[9px] text-white/80 z-10 pt-2 border-t border-white/10">
-                  <span>📞 +91 98765 43210</span>
+                  <span>📞 +91 8261090881</span>
                   <span>📍 Main Market Road</span>
                 </div>
               </div>

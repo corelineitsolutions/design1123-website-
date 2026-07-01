@@ -9,15 +9,78 @@ import {
 
 export function PoliticalShowcase() {
   const cards = [
-    { title: "Warm Birthday Wishes", subtitle: "To Our Leader", category: "Leader Birthday", gradient: "from-[#FF8A00] to-[#F44336]", icon: UserCheck },
-    { title: "Public Meeting Agenda", subtitle: "Join us this Friday", category: "Public Meetings", gradient: "from-[#9C27B0] to-[#E91E63]", icon: Megaphone },
-    { title: "Vote For Development", subtitle: "Elect Candidate", category: "Election Templates", gradient: "from-[#FF6A00] to-[#7B1FA2]", icon: Vote },
-    { title: "Meet Your MLA", subtitle: "Introduction Banner", category: "Leader Introduction", gradient: "from-[#C2185B] to-[#9C27B0]", icon: Users },
-    { title: "Happy Independence Day", subtitle: "Festival Greetings", category: "Festival Greetings", gradient: "from-[#FF8A00] to-[#7B1FA2]", icon: Flag },
-    { title: "Key Achievements & Goals", subtitle: "Platform Report", category: "Achievement Posters", gradient: "from-[#E91E63] to-[#FF6A00]", icon: Award },
-    { title: "Join The Volunteer Wave", subtitle: "Membership Drive", category: "Volunteer Campaign", gradient: "from-[#F44336] to-[#7B1FA2]", icon: HeartHandshake },
-    { title: "Digital Campaign Launch", subtitle: "Press Conference", category: "Press Meet", gradient: "from-[#9C27B0] to-[#FF8A00]", icon: ClipboardList },
-    { title: "Government Welfare Scheme", subtitle: "Public Awareness", category: "Government Scheme", gradient: "from-[#C2185B] to-[#F44336]", icon: Target }
+    { 
+      title: "Warm Birthday Wishes", 
+      subtitle: "To Our Leader", 
+      category: "Leader Birthday", 
+      gradient: "from-[#FF8A00] to-[#F44336]", 
+      icon: UserCheck,
+      imageUrl: "https://images.unsplash.com/photo-1540910419892-4a36d2c3266c?w=600&auto=format&fit=crop&q=80"
+    },
+    { 
+      title: "Public Meeting Agenda", 
+      subtitle: "Join us this Friday", 
+      category: "Public Meetings", 
+      gradient: "from-[#9C27B0] to-[#E91E63]", 
+      icon: Megaphone,
+      imageUrl: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=600&auto=format&fit=crop&q=80"
+    },
+    { 
+      title: "Vote For Development", 
+      subtitle: "Elect Candidate", 
+      category: "Election Templates", 
+      gradient: "from-[#FF6A00] to-[#7B1FA2]", 
+      icon: Vote,
+      imageUrl: "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=600&auto=format&fit=crop&q=80"
+    },
+    { 
+      title: "Meet Your MLA", 
+      subtitle: "Introduction Banner", 
+      category: "Leader Introduction", 
+      gradient: "from-[#C2185B] to-[#9C27B0]", 
+      icon: Users,
+      imageUrl: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=600&auto=format&fit=crop&q=80"
+    },
+    { 
+      title: "Happy Independence Day", 
+      subtitle: "Festival Greetings", 
+      category: "Festival Greetings", 
+      gradient: "from-[#FF8A00] to-[#7B1FA2]", 
+      icon: Flag,
+      imageUrl: "https://images.unsplash.com/photo-1532375810709-75b1da00537c?w=600&auto=format&fit=crop&q=80"
+    },
+    { 
+      title: "Key Achievements & Goals", 
+      subtitle: "Platform Report", 
+      category: "Achievement Posters", 
+      gradient: "from-[#E91E63] to-[#FF6A00]", 
+      icon: Award,
+      imageUrl: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&auto=format&fit=crop&q=80"
+    },
+    { 
+      title: "Join The Volunteer Wave", 
+      subtitle: "Membership Drive", 
+      category: "Volunteer Campaign", 
+      gradient: "from-[#F44336] to-[#7B1FA2]", 
+      icon: HeartHandshake,
+      imageUrl: "https://images.unsplash.com/photo-1559027615-cd4487a24a0b?w=600&auto=format&fit=crop&q=80"
+    },
+    { 
+      title: "Digital Campaign Launch", 
+      subtitle: "Press Conference", 
+      category: "Press Meet", 
+      gradient: "from-[#9C27B0] to-[#FF8A00]", 
+      icon: ClipboardList,
+      imageUrl: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=600&auto=format&fit=crop&q=80"
+    },
+    { 
+      title: "Government Welfare Scheme", 
+      subtitle: "Public Awareness", 
+      category: "Government Scheme", 
+      gradient: "from-[#C2185B] to-[#F44336]", 
+      icon: Target,
+      imageUrl: "https://images.unsplash.com/photo-1509099836639-18ba1795216d?w=600&auto=format&fit=crop&q=80"
+    }
   ];
 
   return (
@@ -46,8 +109,18 @@ export function PoliticalShowcase() {
               className="glass-card overflow-hidden group border border-white/5 hover:border-brand-purple/30 transition-all duration-300"
             >
               {/* Fake template preview body */}
-              <div className={`w-full aspect-[16/10] bg-gradient-to-tr ${item.gradient} p-6 flex flex-col justify-between relative`}>
-                <div className="absolute inset-0 bg-black/15 group-hover:bg-black/0 transition-colors duration-300" />
+              <div className="w-full aspect-[16/10] p-6 flex flex-col justify-between relative overflow-hidden">
+                {/* Background image from internet */}
+                <img 
+                  src={item.imageUrl} 
+                  alt={item.title} 
+                  className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  loading="lazy"
+                />
+                {/* Color tint overlay */}
+                <div className={`absolute inset-0 bg-gradient-to-tr ${item.gradient} opacity-30 mix-blend-multiply`} />
+                {/* Dark readable overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-black/60 opacity-85 group-hover:opacity-75 transition-opacity duration-300" />
                 
                 {/* Header elements inside template */}
                 <div className="flex items-center justify-between z-10">
