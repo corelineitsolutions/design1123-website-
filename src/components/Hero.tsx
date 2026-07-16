@@ -325,7 +325,7 @@ export function Hero() {
                       <div className="flex items-start gap-4 px-4 pt-2">
                         {/* App Icon */}
                         <div className="relative w-16 h-16 rounded-[16px] bg-gradient-to-tr from-[#ff4e00] via-[#ec008c] to-[#7b1fa2] flex items-center justify-center overflow-hidden shadow-lg flex-shrink-0">
-                          <img src="/logo.png" className="w-full h-full object-cover rounded-[16px]" alt="App Icon" />
+                          <img src="/app-icon.jpeg" className="w-full h-full object-cover rounded-[16px]" alt="App Icon" />
                         </div>
                         {/* App Title & Dev */}
                         <div className="flex flex-col min-w-0">
