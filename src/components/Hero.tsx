@@ -111,7 +111,7 @@ export function Hero() {
     { title: "PUBLIC MEETING", category: "Political", grad: "from-purple-600/70 to-pink-600/70", imageUrl: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=300&auto=format&fit=crop&q=80" },
     { title: "CAMPAIGN RALLY", category: "Political", grad: "from-red-500/70 to-orange-600/70", imageUrl: "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=300&auto=format&fit=crop&q=80" },
     { title: "LEADER GREETING", category: "Political", grad: "from-orange-600/70 to-yellow-500/70", imageUrl: "https://images.unsplash.com/photo-1532375810709-75b1da00537c?w=300&auto=format&fit=crop&q=80" },
-    { title: "VOLUNTEER DRIVE", category: "Political", grad: "from-blue-500/70 to-teal-500/70", imageUrl: "https://images.unsplash.com/photo-1559027615-cd4487a24a0b?w=300&auto=format&fit=crop&q=80" },
+    { title: "VOLUNTEER DRIVE", category: "Political", grad: "from-blue-500/70 to-teal-500/70", imageUrl: "https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?w=300&auto=format&fit=crop&q=80" },
 
     // Business
     { title: "FITNESS CLUB OPEN", category: "Business", grad: "from-red-600/70 to-purple-800/70", imageUrl: "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?w=300&auto=format&fit=crop&q=80" },
@@ -634,7 +634,7 @@ export function Hero() {
                       <div className="flex-1 grid grid-cols-2 gap-2 overflow-y-auto px-3 pb-4 scrollbar-none">
                         {filteredTemplates.map((tpl, i) => (
                           <motion.div 
-                            key={i} 
+                            key={tpl.title} 
                             initial={{ opacity: 0, y: 10 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.3, delay: i * 0.05 }}

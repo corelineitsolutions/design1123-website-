@@ -63,7 +63,7 @@ export function PoliticalShowcase() {
       category: "Volunteer Campaign", 
       gradient: "from-[#F44336] to-[#7B1FA2]", 
       icon: HeartHandshake,
-      imageUrl: "https://images.unsplash.com/photo-1559027615-cd4487a24a0b?w=600&auto=format&fit=crop&q=80"
+      imageUrl: "https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?w=600&auto=format&fit=crop&q=80"
     },
     { 
       title: "Digital Campaign Launch", 
