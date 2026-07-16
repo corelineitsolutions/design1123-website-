@@ -23,6 +23,10 @@ export const metadata: Metadata = {
     "Festival Wishes", "Campaign Graphics", "Marketing Design App", "MLA Posters", 
     "Shop Banners", "Easy Graphic Creator", "Figma Alternative", "Canva Alternative"
   ],
+  icons: {
+    icon: "/logo.png",
+    apple: "/logo.png",
+  },
   openGraph: {
     title: "Design 1123 | Create Stunning Designs in Minutes",
     description: "Access thousands of professionally designed ready-to-use templates for business, political, and personal designs.",
