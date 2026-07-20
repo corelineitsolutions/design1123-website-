@@ -105,26 +105,36 @@ export function Hero() {
 
   // Categorized mockup templates inside the phone screen
   const appTemplates = [
-    // Political
-    { title: "MLA CAMPAIGN", category: "Political", grad: "from-orange-500/70 to-red-600/70", imageUrl: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=300&auto=format&fit=crop&q=80" },
-    { title: "VOTE FOR PROGRESS", category: "Political", grad: "from-blue-600/70 to-indigo-800/70", imageUrl: "https://images.unsplash.com/photo-1540910419892-4a36d2c3266c?w=300&auto=format&fit=crop&q=80" },
-    { title: "PUBLIC MEETING", category: "Political", grad: "from-purple-600/70 to-pink-600/70", imageUrl: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=300&auto=format&fit=crop&q=80" },
-    { title: "CAMPAIGN RALLY", category: "Political", grad: "from-red-500/70 to-orange-600/70", imageUrl: "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=300&auto=format&fit=crop&q=80" },
-    { title: "LEADER GREETING", category: "Political", grad: "from-orange-600/70 to-yellow-500/70", imageUrl: "https://images.unsplash.com/photo-1532375810709-75b1da00537c?w=300&auto=format&fit=crop&q=80" },
-    { title: "VOLUNTEER DRIVE", category: "Political", grad: "from-blue-500/70 to-teal-500/70", imageUrl: "https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?w=300&auto=format&fit=crop&q=80" },
+    // Political (real app template screenshots)
+    { title: "LEADER BIRTHDAY", category: "Political", grad: "from-orange-500/70 to-red-600/70", imageUrl: "/templates/politics/leader-birthday.jpeg", appShot: true },
+    { title: "MEETING GATHERING", category: "Political", grad: "from-blue-600/70 to-indigo-800/70", imageUrl: "/templates/politics/meeting-gathering.jpeg", appShot: true },
+    { title: "ELECTION CAMPAIGN", category: "Political", grad: "from-purple-600/70 to-pink-600/70", imageUrl: "/templates/politics/election-campaigning.jpeg", appShot: true },
+    { title: "DEVELOPMENT WORKS", category: "Political", grad: "from-red-500/70 to-orange-600/70", imageUrl: "/templates/politics/development-works.jpeg", appShot: true },
+    { title: "BLOOD DONATION", category: "Political", grad: "from-orange-600/70 to-yellow-500/70", imageUrl: "/templates/politics/blood-donation-camp.jpeg", appShot: true },
+    { title: "GOVERNMENT SCHEMES", category: "Political", grad: "from-blue-500/70 to-teal-500/70", imageUrl: "/templates/politics/government-schemes.jpeg", appShot: true },
+    { title: "PARTY JOINING", category: "Political", grad: "from-indigo-600/70 to-purple-700/70", imageUrl: "/templates/politics/party-joining.jpeg", appShot: true },
+    { title: "WINNING CANDIDATE", category: "Political", grad: "from-amber-500/70 to-red-600/70", imageUrl: "/templates/politics/winning-candidate.jpeg", appShot: true },
 
-    // Business
-    { title: "FITNESS CLUB OPEN", category: "Business", grad: "from-red-600/70 to-purple-800/70", imageUrl: "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?w=300&auto=format&fit=crop&q=80" },
-    { title: "GRAND OPENING CAFE", category: "Business", grad: "from-amber-500/70 to-red-600/70", imageUrl: "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=300&auto=format&fit=crop&q=80" },
-    { title: "FESTIVAL OFFER", category: "Business", grad: "from-brand-orange/70 to-brand-pink/70", imageUrl: "https://images.unsplash.com/photo-1472851294608-062f824d29cc?w=300&auto=format&fit=crop&q=80" },
+    // Business (real app template screenshots)
+    { title: "MOBILE SHOP DEALS", category: "Business", grad: "from-red-600/70 to-purple-800/70", imageUrl: "/templates/business/mobile-shop.jpeg", appShot: true },
+    { title: "RESTAURANT & BAR", category: "Business", grad: "from-amber-500/70 to-red-600/70", imageUrl: "/templates/business/restaurant.jpeg", appShot: true },
+    { title: "JEWELLERY LUXURY", category: "Business", grad: "from-brand-orange/70 to-brand-pink/70", imageUrl: "/templates/business/jewellery.jpeg", appShot: true },
+    { title: "ELECTRONICS STORE", category: "Business", grad: "from-blue-600/70 to-indigo-800/70", imageUrl: "/templates/business/electronics.jpeg", appShot: true },
+    { title: "MEDICAL STORE", category: "Business", grad: "from-teal-500/70 to-green-600/70", imageUrl: "/templates/business/medical-store.jpeg", appShot: true },
+    { title: "SUPER MARKET", category: "Business", grad: "from-orange-500/70 to-red-600/70", imageUrl: "/templates/business/supermarket.jpeg", appShot: true },
 
-    // Wishes
-    { title: "WEDDING INVITATION", category: "Wishes", grad: "from-rose-500/70 to-purple-600/70", imageUrl: "https://images.unsplash.com/photo-1519741497674-611481863552?w=300&auto=format&fit=crop&q=80" },
-    { title: "HAPPY BIRTHDAY", category: "Wishes", grad: "from-blue-500/70 to-teal-500/70", imageUrl: "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=300&auto=format&fit=crop&q=80" },
+    // Wishes (real app personal template screenshots)
+    { title: "BIRTHDAY WISHES", category: "Wishes", grad: "from-rose-500/70 to-purple-600/70", imageUrl: "/templates/personal/birthday-wishes.jpeg", appShot: true },
+    { title: "ANNIVERSARY WISHES", category: "Wishes", grad: "from-blue-500/70 to-teal-500/70", imageUrl: "/templates/personal/anniversary-wishes.jpeg", appShot: true },
+    { title: "GOOD MORNING", category: "Wishes", grad: "from-amber-500/70 to-orange-600/70", imageUrl: "/templates/personal/good-morning.jpeg", appShot: true },
+    { title: "GOOD NIGHT", category: "Wishes", grad: "from-indigo-600/70 to-purple-800/70", imageUrl: "/templates/personal/good-night.jpeg", appShot: true },
+    { title: "ISLAMIC GREETING", category: "Wishes", grad: "from-emerald-500/70 to-teal-700/70", imageUrl: "/templates/personal/islamic.jpeg", appShot: true },
+    { title: "MOTIVATIONAL", category: "Wishes", grad: "from-orange-500/70 to-red-600/70", imageUrl: "/templates/personal/motivational-thoughts.jpeg", appShot: true },
 
-    // Festival
-    { title: "HAPPY DIWALI WISH", category: "Festival", grad: "from-yellow-500/70 to-red-600/70", imageUrl: "https://images.unsplash.com/photo-1605152276897-4f618f831968?w=300&auto=format&fit=crop&q=80" },
-    { title: "CHRISTMAS CELEBRATION", category: "Festival", grad: "from-green-600/70 to-red-600/70", imageUrl: "https://images.unsplash.com/photo-1544816155-12df9643f363?w=300&auto=format&fit=crop&q=80" },
+    // Festival (personal / devotionals)
+    { title: "MAHADEV DEVOTIONAL", category: "Festival", grad: "from-yellow-500/70 to-red-600/70", imageUrl: "/templates/personal/mahadev-devotional.jpeg", appShot: true },
+    { title: "BABASAHEB AMBEDKAR", category: "Festival", grad: "from-blue-600/70 to-indigo-800/70", imageUrl: "/templates/personal/babasaheb-ambedkar.jpeg", appShot: true },
+    { title: "SHRADDHANJALI", category: "Festival", grad: "from-slate-500/70 to-gray-700/70", imageUrl: "/templates/personal/shraddhanjali.jpeg", appShot: true },
   ];
 
   const filteredTemplates = appTemplates.filter(
@@ -133,7 +143,7 @@ export function Hero() {
 
   const floatingTemplates = [
     {
-      title: "VOTE FOR PROGRESS",
+      title: "ELECTION CAMPAIGN",
       category: "Political Campaign",
       color: "from-blue-600 to-indigo-800",
       glowShadow: "0 0 25px rgba(37,99,235,0.65)",
@@ -141,43 +151,47 @@ export function Hero() {
       x: "calc(50% - 320px)",
       y: "10%",
       rotate: -10,
-      imageUrl: "https://images.unsplash.com/photo-1540910419892-4a36d2c3266c?w=400&auto=format&fit=crop&q=80"
+      imageUrl: "/templates/politics/election-campaigning.jpeg",
+      appShot: true
     },
     {
-      title: "FITNESS CLUB OPEN",
-      category: "Gym & Fitness",
+      title: "MOBILE SHOP DEALS",
+      category: "Mobile Shop",
       color: "from-red-600 to-purple-800",
       glowShadow: "0 0 25px rgba(220,38,38,0.65)",
       delay: 1.2,
       x: "calc(50% - 345px)",
       y: "38%",
       rotate: 8,
-      imageUrl: "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?w=400&auto=format&fit=crop&q=80"
+      imageUrl: "/templates/business/mobile-shop.jpeg",
+      appShot: true
     },
     {
-      title: "Sonia & Rahul's Wedding",
-      category: "Personal Invitation",
+      title: "BIRTHDAY WISHES",
+      category: "Personal Greeting",
       color: "from-rose-500 to-purple-600",
       glowShadow: "0 0 25px rgba(244,63,94,0.65)",
       delay: 2,
       x: "calc(50% - 305px)",
       y: "66%",
       rotate: -6,
-      imageUrl: "https://images.unsplash.com/photo-1519741497674-611481863552?w=400&auto=format&fit=crop&q=80"
+      imageUrl: "/templates/personal/birthday-wishes.jpeg",
+      appShot: true
     },
     {
-      title: "FESTIVAL OFFER - 20% OFF",
-      category: "Retail Shop",
+      title: "JEWELLERY LUXURY",
+      category: "Jewellery Store",
       color: "from-brand-orange to-brand-pink",
       glowShadow: "0 0 25px rgba(255,138,0,0.65)",
       delay: 0.6,
       x: "calc(50% + 130px)",
       y: "12%",
       rotate: 6,
-      imageUrl: "https://images.unsplash.com/photo-1472851294608-062f824d29cc?w=400&auto=format&fit=crop&q=80"
+      imageUrl: "/templates/business/jewellery.jpeg",
+      appShot: true
     },
     {
-      title: "HAPPY DIWALI GREETINGS",
+      title: "MAHADEV DEVOTIONAL",
       category: "Festival Wishes",
       color: "from-yellow-500 to-red-600",
       glowShadow: "0 0 25px rgba(234,179,8,0.65)",
@@ -185,10 +199,11 @@ export function Hero() {
       x: "calc(50% + 155px)",
       y: "40%",
       rotate: -8,
-      imageUrl: "https://images.unsplash.com/photo-1605152276897-4f618f831968?w=400&auto=format&fit=crop&q=80"
+      imageUrl: "/templates/personal/mahadev-devotional.jpeg",
+      appShot: true
     },
     {
-      title: "GRAND OPENING CAFE",
+      title: "RESTAURANT & BAR",
       category: "Restaurant Flyer",
       color: "from-amber-500 to-red-600",
       glowShadow: "0 0 25px rgba(245,158,11,0.65)",
@@ -196,7 +211,8 @@ export function Hero() {
       x: "calc(50% + 115px)",
       y: "68%",
       rotate: 10,
-      imageUrl: "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=400&auto=format&fit=crop&q=80"
+      imageUrl: "/templates/business/restaurant.jpeg",
+      appShot: true
     },
   ];
 
@@ -638,22 +654,30 @@ export function Hero() {
                             initial={{ opacity: 0, y: 10 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.3, delay: i * 0.05 }}
-                            className="aspect-[3/4] rounded-xl relative overflow-hidden p-2 flex flex-col justify-between shadow-lg border border-white/5 group cursor-pointer"
+                            className={`aspect-[3/4] rounded-xl relative overflow-hidden shadow-lg border border-white/5 group cursor-pointer ${
+                              tpl.appShot ? "bg-black p-0" : "p-2 flex flex-col justify-between"
+                            }`}
                           >
                             {/* Template Image Background */}
                             <img 
                               src={tpl.imageUrl} 
                               alt={tpl.title} 
-                              className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" 
+                              className={`absolute inset-0 w-full h-full transition-transform duration-500 group-hover:scale-105 ${
+                                tpl.appShot ? "object-contain" : "object-cover"
+                              }`}
                               loading="lazy"
                             />
-                            {/* Tint color blend */}
-                            <div className={`absolute inset-0 bg-gradient-to-br ${tpl.grad} opacity-20 mix-blend-multiply`} />
-                            {/* Text readable overlay */}
-                            <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-black/10" />
-                            
-                            <span className="text-[6px] bg-black/60 px-1 py-0.5 rounded-full w-max text-white relative z-10 border border-white/10">Template</span>
-                            <span className="text-[8px] font-heading font-black leading-tight text-white relative z-10 truncate">{tpl.title}</span>
+                            {!tpl.appShot && (
+                              <>
+                                {/* Tint color blend */}
+                                <div className={`absolute inset-0 bg-gradient-to-br ${tpl.grad} opacity-20 mix-blend-multiply`} />
+                                {/* Text readable overlay */}
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-black/10" />
+                                
+                                <span className="text-[6px] bg-black/60 px-1 py-0.5 rounded-full w-max text-white relative z-10 border border-white/10">Template</span>
+                                <span className="text-[8px] font-heading font-black leading-tight text-white relative z-10 truncate">{tpl.title}</span>
+                              </>
+                            )}
                           </motion.div>
                         ))}
                       </div>
@@ -695,19 +719,22 @@ export function Hero() {
                     delay: item.delay,
                   }}
                 >
-                  <div className="w-full aspect-[4/3] rounded-lg mb-2 relative overflow-hidden flex items-center justify-center">
+                  <div className={`w-full aspect-[4/3] rounded-lg mb-2 relative overflow-hidden flex items-center justify-center ${item.appShot ? "bg-black" : ""}`}>
                     {/* Background Template Image */}
                     <img 
                       src={item.imageUrl} 
                       alt={item.title} 
-                      className="absolute inset-0 w-full h-full object-cover" 
+                      className={`absolute inset-0 w-full h-full ${item.appShot ? "object-contain" : "object-cover"}`}
                       loading="lazy"
                     />
-                    {/* Gradient Overlay */}
-                    <div className={`absolute inset-0 bg-gradient-to-tr ${item.color} opacity-40 mix-blend-multiply`} />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/40 to-black/20" />
-                    
-                    <span className="text-[10px] font-heading font-black text-white text-center px-2 relative z-10 leading-tight">{item.title}</span>
+                    {!item.appShot && (
+                      <>
+                        {/* Gradient Overlay */}
+                        <div className={`absolute inset-0 bg-gradient-to-tr ${item.color} opacity-40 mix-blend-multiply`} />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/40 to-black/20" />
+                        <span className="text-[10px] font-heading font-black text-white text-center px-2 relative z-10 leading-tight">{item.title}</span>
+                      </>
+                    )}
                   </div>
                   <div className="text-[9px] text-brand-orange font-bold uppercase">{item.category}</div>
                 </motion.div>

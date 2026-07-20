@@ -99,21 +99,25 @@ export function CustomFooterFeature() {
               {/* Multiple Template Previews receiving the footer */}
               <div className="grid grid-cols-3 gap-3">
                 {[
-                  { name: "Retail Poster", grad: "from-[#FF8A00] to-[#E91E63]", imageUrl: "https://images.unsplash.com/photo-1472851294608-062f824d29cc?w=300&auto=format&fit=crop&q=80" },
-                  { name: "Political Flyer", grad: "from-[#9C27B0] to-[#7B1FA2]", imageUrl: "https://images.unsplash.com/photo-1540910419892-4a36d2c3266c?w=300&auto=format&fit=crop&q=80" },
-                  { name: "Festival Greeting", grad: "from-[#FF6A00] to-[#F44336]", imageUrl: "https://images.unsplash.com/photo-1605152276897-4f618f831968?w=300&auto=format&fit=crop&q=80" }
+                  { name: "Retail Poster", grad: "from-[#FF8A00] to-[#E91E63]", imageUrl: "/templates/business/supermarket.jpeg", appShot: true },
+                  { name: "Political Flyer", grad: "from-[#9C27B0] to-[#7B1FA2]", imageUrl: "/templates/politics/leader-birthday.jpeg", appShot: true },
+                  { name: "Festival Greeting", grad: "from-[#FF6A00] to-[#F44336]", imageUrl: "https://images.unsplash.com/photo-1605152276897-4f618f831968?w=300&auto=format&fit=crop&q=80", appShot: false }
                 ].map((tpl, i) => (
                   <div key={i} className="glass-card aspect-[3/4] p-2 flex flex-col justify-between overflow-hidden relative group">
-                    <div className="w-full h-[60%] rounded-lg relative overflow-hidden flex items-center justify-center">
+                    <div className={`w-full h-[60%] rounded-lg relative overflow-hidden flex items-center justify-center ${tpl.appShot ? "bg-black" : ""}`}>
                       <img 
                         src={tpl.imageUrl} 
                         alt={tpl.name} 
-                        className="absolute inset-0 w-full h-full object-cover"
+                        className={`absolute inset-0 w-full h-full ${tpl.appShot ? "object-contain" : "object-cover"}`}
                         loading="lazy"
                       />
-                      <div className={`absolute inset-0 bg-gradient-to-tr ${tpl.grad} opacity-35 mix-blend-multiply`} />
-                      <div className="absolute inset-0 bg-black/60" />
-                      <span className="text-[8px] font-heading font-black text-white text-center relative z-10 leading-tight">{tpl.name}</span>
+                      {!tpl.appShot && (
+                        <>
+                          <div className={`absolute inset-0 bg-gradient-to-tr ${tpl.grad} opacity-35 mix-blend-multiply`} />
+                          <div className="absolute inset-0 bg-black/60" />
+                          <span className="text-[8px] font-heading font-black text-white text-center relative z-10 leading-tight">{tpl.name}</span>
+                        </>
+                      )}
                     </div>
 
                     {/* Stamped Brand profile animation */}
