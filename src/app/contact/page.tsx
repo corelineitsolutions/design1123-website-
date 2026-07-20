@@ -61,8 +61,8 @@ export default function ContactPage() {
     {
       icon: Mail,
       label: "Email ID",
-      value: "hello@design1123.com",
-      href: "mailto:hello@design1123.com",
+      value: "info@design1123.com",
+      href: "mailto:info@design1123.com",
       hint: "We usually reply within 24 hours",
     },
     {
