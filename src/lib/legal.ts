@@ -1,7 +1,7 @@
 import { BRAND } from "./data";
 
 export const LEGAL = {
-  company: "Design 1123 Media Pvt. Ltd.",
+  company: "Coreline IT Solutions, Pune",
   website: "https://design1123.com",
   lastUpdated: "May 21, 2026",
   contactEmail: BRAND.email,

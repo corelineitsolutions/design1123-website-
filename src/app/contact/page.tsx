@@ -180,9 +180,9 @@ export default function ContactPage() {
                   </h3>
                 </div>
                 <p className="text-sm text-text-secondary leading-relaxed">
-                  <span className="text-white font-semibold">Design 1123 Media Pvt. Ltd.</span>
+                  <span className="text-white font-semibold">Coreline IT Solutions, Pune</span>
                   <br />
-                  Premium template creation platform for business branding, political campaigns,
+                  Parent company of Design 1123 — premium template creation platform for business branding, political campaigns,
                   festivals, and personal greetings.
                 </p>
                 <div className="flex items-center gap-2 text-xs text-text-secondary pt-2 border-t border-white/10">
