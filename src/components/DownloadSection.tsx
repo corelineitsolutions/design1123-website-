@@ -61,7 +61,7 @@ export function DownloadSection() {
                 Download App
               </Button>
             </a>
-            <a href="mailto:hello@design1123.com" className="w-full sm:w-auto">
+            <a href="/contact" className="w-full sm:w-auto">
               <Button size="lg" variant="outline" className="w-full px-12 py-5 text-lg">
                 Contact Us
               </Button>

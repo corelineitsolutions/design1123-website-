@@ -11,7 +11,7 @@ export function Footer() {
       { name: "FAQ", href: "/#faq" }
     ],
     Support: [
-      { name: "Contact Support", href: "/#contact" },
+      { name: "Contact Support", href: "/contact" },
       { name: "Privacy Policy", href: "/privacy" },
       { name: "Terms of Service", href: "/terms" }
     ],
