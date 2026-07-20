@@ -16,6 +16,7 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://design1123.com"),
   title: "Design 1123 | Premium Template Creation Platform",
   description: "Create stunning marketing designs, political campaign posters, festival greetings, and business templates in minutes. Ready-to-use customizable graphics for everyone.",
   keywords: [
@@ -24,8 +25,9 @@ export const metadata: Metadata = {
     "Shop Banners", "Easy Graphic Creator", "Figma Alternative", "Canva Alternative"
   ],
   icons: {
-    icon: "/logo.png",
-    apple: "/logo.png",
+    icon: [{ url: "/og-image.jpeg", type: "image/jpeg" }],
+    apple: "/og-image.jpeg",
+    shortcut: "/og-image.jpeg",
   },
   openGraph: {
     title: "Design 1123 | Create Stunning Designs in Minutes",
@@ -34,9 +36,9 @@ export const metadata: Metadata = {
     siteName: "Design 1123",
     images: [
       {
-        url: "/logo.png",
-        width: 512,
-        height: 512,
+        url: "/og-image.jpeg",
+        width: 732,
+        height: 762,
         alt: "Design 1123 App Logo",
       }
     ],
@@ -46,7 +48,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Design 1123 | Premium Template Creation Platform",
     description: "Create stunning marketing, festival, and political designs in minutes.",
-    images: ["/logo.png"],
+    images: ["/og-image.jpeg"],
   },
 };
 
