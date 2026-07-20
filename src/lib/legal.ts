@@ -1,7 +1,7 @@
 import { BRAND } from "./data";
 
 export const LEGAL = {
-  company: "Design1123 Media Pvt. Ltd.",
+  company: "Design 1123 Media Pvt. Ltd.",
   website: "https://design1123.com",
   lastUpdated: "May 21, 2026",
   contactEmail: BRAND.email,
@@ -43,7 +43,7 @@ export const privacySections: LegalSection[] = [
     title: "3. How We Use Your Information",
     paragraphs: ["We use collected information to:"],
     list: [
-      "Provide, maintain, and improve the Design1123 platform and creative tools.",
+      "Provide, maintain, and improve the Design 1123 platform and creative tools.",
       "Process subscriptions, trials, and in-app purchases.",
       "Personalize templates, recommendations, and festival alerts for your industry.",
       "Send service updates, security alerts, and promotional messages (you may opt out of marketing).",

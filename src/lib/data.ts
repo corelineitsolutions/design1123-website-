@@ -1,5 +1,5 @@
 export const BRAND = {
-  name: "Design1123",
+  name: "Design 1123",
   tagline: "Your Ultimate Business Branding Studio",
   phone: "+91 8261090881",
   email: "hello@design1123.com",
@@ -255,7 +255,7 @@ export const testimonials = [
     name: "Priya Sharma",
     business: "Sharma Sweets, Pune",
     quote:
-      "Design1123 turned our Diwali campaign around in an afternoon. Customers still ask which agency we used—we just smile.",
+      "Design 1123 turned our Diwali campaign around in an afternoon. Customers still ask which agency we used—we just smile.",
   },
   {
     name: "Rahul Mehta",
@@ -267,7 +267,7 @@ export const testimonials = [
     name: "Anita Desai",
     business: "Glow Studio Salon, Mumbai",
     quote:
-      "I run the salon and the social pages. Design1123 is the only tool that keeps up with both without burning my Sundays.",
+      "I run the salon and the social pages. Design 1123 is the only tool that keeps up with both without burning my Sundays.",
   },
 ] as const;
 
