@@ -29,6 +29,7 @@ export const footerLinks = {
     { label: "Careers", href: "/#home" },
     { label: "Privacy Policy", href: "/privacy" },
     { label: "Terms & Conditions", href: "/terms" },
+    { label: "Referral Policy", href: "/referral-policy" },
     { label: "Dealer Program", href: "/#home" },
   ],
 } as const;

@@ -14,7 +14,8 @@ export function Footer() {
       { name: "Contact Support", href: "/contact" },
       { name: "Feedback", href: "/feedback" },
       { name: "Privacy Policy", href: "/privacy" },
-      { name: "Terms of Service", href: "/terms" }
+      { name: "Terms of Service", href: "/terms" },
+      { name: "Referral Policy", href: "/referral-policy" }
     ],
   };
 

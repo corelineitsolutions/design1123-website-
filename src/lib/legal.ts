@@ -243,3 +243,93 @@ export const termsSections: LegalSection[] = [
     ],
   },
 ];
+
+export const referralSections: LegalSection[] = [
+  {
+    id: "overview",
+    title: "1. Program Overview",
+    paragraphs: [
+      `The ${BRAND.name} Referral Program ("Program") is designed to reward our loyal users for sharing our platform with friends, family, and other business owners. By inviting new businesses to design professional marketing graphics with ${BRAND.name}, you and your referrals can earn exclusive benefits.`,
+      "By participating in the Program, you agree to these Referral Policy terms, which supplement our Terms & Conditions and Privacy Policy.",
+    ],
+  },
+  {
+    id: "eligibility",
+    title: "2. Eligibility Criteria",
+    paragraphs: [
+      "To participate in the Referral Program as a Referrer (the person sharing the code) or a Referee (the person receiving the code), you must meet the following requirements:",
+    ],
+    list: [
+      "You must be an active, registered user of the Design 1123 platform.",
+      "You must be at least 18 years of age.",
+      "You must not use the Program for spamming, bulk emailing, or any fraudulent activities.",
+      "Self-referral (creating multiple accounts or referring yourself) is strictly prohibited and will lead to immediate disqualification and account suspension.",
+    ],
+  },
+  {
+    id: "how-to-refer",
+    title: "3. How to Refer & Earn",
+    paragraphs: [
+      "Earning rewards with Design 1123 is simple and automated:",
+    ],
+    list: [
+      "Get Your Code: Access your unique referral link or code from the 'Refer & Earn' section in the Design 1123 application.",
+      "Share: Send your referral link/code to friends, partners, or other businesses who want professional design templates.",
+      "Referee Registration: The Referee must download the Design 1123 app, register a new account, and apply your referral code during sign-up.",
+      "Referee Purchase: The Referee must purchase any of our premium subscription plans (Pro Quarterly, Growth Annual, or Studio Mega).",
+    ],
+  },
+  {
+    id: "rewards",
+    title: "4. Referral Rewards & Incentives",
+    paragraphs: [
+      "Once the Referee completes their first qualifying purchase, rewards will be credited as follows:",
+    ],
+    list: [
+      "Referrer Benefit: The Referrer receives 30 days of complimentary extension on their active subscription (or a fixed set of premium design credits if on a trial/starter tier).",
+      "Referee Benefit: The Referee gets a flat 10% discount on their first paid subscription plan or receives 15 bonus high-definition export credits.",
+      "No limits: There is no limit to the number of friends you can refer, allowing you to stack your subscription extensions indefinitely.",
+    ],
+  },
+  {
+    id: "redemption",
+    title: "5. Reward Redemption & Validity",
+    paragraphs: [
+      "Referral rewards are subject to the following validation rules:",
+      "Bonus days or credits are credited automatically within 24-48 hours after a successful transaction by the Referee.",
+      "Rewards cannot be exchanged for physical cash or transferred to other user accounts.",
+      "If the Referee cancels their purchase or receives a refund under our refund policy, any referral rewards credited to the Referrer for that referral will be voided.",
+    ],
+  },
+  {
+    id: "fair-use",
+    title: "6. Abuse and Fair Play",
+    paragraphs: [
+      "We want to keep this program fair and rewarding for everyone. The following activities are prohibited:",
+    ],
+    list: [
+      "Running paid search engine or social media ads using terms like 'Design 1123', 'Design 1123 Coupon', or similar brand names to drive traffic to your referral link.",
+      "Spamming online forums, blog comments, or bulk mailing lists with your referral link.",
+      "Creating fake or automated accounts to generate referrals.",
+      "Any behavior that, in our sole discretion, is deemed manipulative, deceptive, or abusive to the platform.",
+    ],
+    footer: "Violation of these fair play rules will result in immediate termination of your account, forfeiture of all rewards, and potential legal action.",
+  },
+  {
+    id: "modifications",
+    title: "7. Modifications & Program Changes",
+    paragraphs: [
+      "Coreline IT Solutions reserves the right to modify, suspend, or terminate the Referral Program, its rewards, or these policies at any time without prior notice. Any changes will be posted on this page and will apply to all subsequent referrals.",
+    ],
+  },
+  {
+    id: "contact",
+    title: "8. Contact & Support",
+    paragraphs: [
+      `If you have any questions, or if your referral rewards have not been credited correctly, please reach out to our support team with the details of your referral (Referee email or transaction receipt):`,
+      `Company: ${LEGAL.company}`,
+      `Email: ${BRAND.email}`,
+      `Phone: ${BRAND.phone}`,
+    ],
+  },
+];
