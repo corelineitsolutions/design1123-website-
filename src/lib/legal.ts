@@ -53,8 +53,24 @@ export const privacySections: LegalSection[] = [
     ],
   },
   {
+    id: "flowchart",
+    title: "4. Flowchart (App Functionality & Data Handling)",
+    paragraphs: [
+      "The following outlines how user data is handled across specific features and user flows within the Design1123 application:",
+    ],
+    list: [
+      "User Registration: When registering, you provide basic account information which is required to create your profile and personalize your experience.",
+      "Political Category: If you use the application for political profiles, you may provide information such as your designation and protocol to customize designs for election campaigns, birthdays, and public meetings.",
+      "Business Category: If you use the application for a business (e.g., shops, real estate, education), you may provide business-related information to customize designs for your specific category.",
+      "WhatsApp Category Requests: If your category is unavailable, you may voluntarily contact us via WhatsApp to request it. Information shared through WhatsApp is used solely to understand and fulfill this request.",
+      "Image Designs & Videos: You can customize Image Designs and Videos by changing colours, fonts, sizes, and adding text. You may also upload User-Generated Content such as your own photos and logos.",
+      "User-Generated Content: Photos, logos, names, and text you upload are processed solely to provide editing and customization features. We do not control how you share exported designs through third-party applications after downloading them.",
+      "Purchases & Trials: We offer an optional ₹1 3-Day Trial, Premium Plans, ₹11 Image Designs, and ₹23 Videos. Payment details are processed by secure third-party providers. [CONFIRM REQUIRED: Verify specific payment providers and confirm Design1123 does not store payment data].",
+    ]
+  },
+  {
     id: "sharing",
-    title: "4. How We Share Information",
+    title: "5. How We Share Information",
     paragraphs: [
       "We do not sell your personal information. We may share data only in these circumstances:",
     ],
@@ -67,7 +83,7 @@ export const privacySections: LegalSection[] = [
   },
   {
     id: "retention",
-    title: "5. Data Retention",
+    title: "6. Data Retention",
     paragraphs: [
       "We retain your information for as long as your account is active or as needed to provide Services. Uploaded designs and account data may be stored until you delete them or close your account, subject to backup and legal retention periods.",
       "We may retain anonymized or aggregated data indefinitely for analytics and product improvement.",
@@ -75,14 +91,14 @@ export const privacySections: LegalSection[] = [
   },
   {
     id: "security",
-    title: "6. Security",
+    title: "7. Security",
     paragraphs: [
       "We implement industry-standard safeguards including encryption in transit, access controls, and regular security reviews. No method of transmission over the internet is 100% secure; we encourage you to use strong passwords and keep your login credentials confidential.",
     ],
   },
   {
     id: "your-rights",
-    title: "7. Your Rights & Choices",
+    title: "8. Your Rights & Choices",
     paragraphs: ["Depending on applicable law, you may have the right to:"],
     list: [
       "Access, correct, or delete your personal information.",
@@ -94,28 +110,28 @@ export const privacySections: LegalSection[] = [
   },
   {
     id: "children",
-    title: "8. Children's Privacy",
+    title: "9. Children's Privacy",
     paragraphs: [
       "Our Services are not directed to individuals under 18. We do not knowingly collect personal information from children. If you believe a child has provided us data, please contact us and we will delete it promptly.",
     ],
   },
   {
     id: "third-party",
-    title: "9. Third-Party Links & Services",
+    title: "10. Third-Party Links & Services",
     paragraphs: [
       "Our app and website may contain links to third-party sites or integrate with social platforms (e.g., WhatsApp, Instagram). We are not responsible for the privacy practices of those third parties. We encourage you to review their policies before sharing information.",
     ],
   },
   {
     id: "changes",
-    title: "10. Changes to This Policy",
+    title: "11. Changes to This Policy",
     paragraphs: [
       'We may update this Privacy Policy from time to time. We will post the revised version on this page and update the "Last updated" date. Material changes may be communicated via email or in-app notice.',
     ],
   },
   {
     id: "contact",
-    title: "11. Contact Us",
+    title: "12. Contact Us",
     paragraphs: [
       `If you have questions about this Privacy Policy or our data practices, please contact:`,
       `${LEGAL.company}`,
