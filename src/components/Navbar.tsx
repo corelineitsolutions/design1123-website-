@@ -20,7 +20,7 @@ export function Navbar() {
     { name: "Features", href: "/#features" },
     { name: "Categories", href: "/#categories" },
     { name: "Templates", href: "/#showcases" },
-    { name: "Download", href: "/#download" },
+    { name: "Download", href: "/#get-app" },
     { name: "FAQ", href: "/#faq" },
     { name: "Contact", href: "/contact" },
   ];
@@ -61,7 +61,7 @@ export function Navbar() {
         </div>
 
         <div className="hidden xl:block">
-          <a href="#download">
+          <a href="#get-app">
             <Button variant="primary" size="md">
               Download App
             </Button>
@@ -97,7 +97,7 @@ export function Navbar() {
               {link.name}
             </a>
           ))}
-          <a href="#download" onClick={() => setIsOpen(false)} className="w-full mt-6 block">
+          <a href="#get-app" onClick={() => setIsOpen(false)} className="w-full mt-6 block">
             <Button variant="primary" size="lg" className="w-full py-4 text-base">
               Download App
             </Button>

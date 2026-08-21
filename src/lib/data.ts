@@ -22,7 +22,7 @@ export const footerLinks = {
     { label: "FAQ", href: "/#home" },
     { label: "Industries", href: "/#industries" },
     { label: "Quotes", href: "/#home" },
-    { label: "Free Logo Maker", href: "/#download" },
+    { label: "Free Logo Maker", href: "/#get-app" },
     { label: "All Events", href: "/#events" },
   ],
   legal: [

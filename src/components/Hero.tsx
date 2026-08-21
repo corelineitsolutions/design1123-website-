@@ -276,7 +276,7 @@ export function Hero() {
               transition={{ duration: 0.8, delay: 0.3 }}
               className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto"
             >
-              <a href="#download" className="w-full sm:w-auto">
+              <a href="#get-app" className="w-full sm:w-auto">
                 <Button size="lg" variant="primary" className="w-full">
                   Download App
                 </Button>
