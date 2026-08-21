@@ -32,12 +32,12 @@ export function AppStoreButton({ className = "" }: { className?: string }) {
       rel="noopener noreferrer"
       whileHover={{ scale: 1.05, translateY: -2 }}
       whileTap={{ scale: 0.98 }}
-      className={`flex items-center gap-6 bg-white/[0.03] hover:bg-white/[0.07] border border-white/10 hover:border-white/20 px-8 py-5.5 rounded-3xl transition-colors duration-300 text-left w-full sm:w-auto min-w-[280px] shadow-[0_6px_30px_rgba(0,0,0,0.4)] backdrop-blur-md ${className}`}
+      className={`flex items-center gap-7 bg-white/[0.03] hover:bg-white/[0.07] border border-white/10 hover:border-white/20 px-9 py-6 rounded-3xl transition-colors duration-300 text-left w-full sm:w-auto min-w-[320px] shadow-[0_6px_30px_rgba(0,0,0,0.4)] backdrop-blur-md ${className}`}
     >
-      <img src="/app-store-logo.png" className="w-20 h-20 object-contain" alt="App Store Logo" />
+      <img src="/app-store-logo.png" className="w-28 h-28 object-contain" alt="App Store Logo" />
       <div className="flex flex-col">
-        <span className="text-[12px] text-text-secondary uppercase tracking-wider font-semibold leading-none">Download on the</span>
-        <span className="text-[24px] font-bold text-white font-sans mt-2 leading-none">App Store</span>
+        <span className="text-[13px] text-text-secondary uppercase tracking-wider font-semibold leading-none">Download on the</span>
+        <span className="text-[26px] font-bold text-white font-sans mt-2 leading-none">App Store</span>
       </div>
     </motion.a>
   );
@@ -51,12 +51,12 @@ export function PlayStoreButton({ className = "" }: { className?: string }) {
       rel="noopener noreferrer"
       whileHover={{ scale: 1.05, translateY: -2 }}
       whileTap={{ scale: 0.98 }}
-      className={`flex items-center gap-6 bg-white/[0.03] hover:bg-white/[0.07] border border-white/10 hover:border-white/20 px-8 py-5.5 rounded-3xl transition-colors duration-300 text-left w-full sm:w-auto min-w-[280px] shadow-[0_6px_30px_rgba(0,0,0,0.4)] backdrop-blur-md ${className}`}
+      className={`flex items-center gap-7 bg-white/[0.03] hover:bg-white/[0.07] border border-white/10 hover:border-white/20 px-9 py-6 rounded-3xl transition-colors duration-300 text-left w-full sm:w-auto min-w-[320px] shadow-[0_6px_30px_rgba(0,0,0,0.4)] backdrop-blur-md ${className}`}
     >
-      <img src="/google-play-logo.png" className="w-20 h-20 object-contain" alt="Google Play Logo" />
+      <img src="/google-play-logo.png" className="w-28 h-28 object-contain" alt="Google Play Logo" />
       <div className="flex flex-col">
-        <span className="text-[12px] text-text-secondary uppercase tracking-wider font-semibold leading-none">GET IT ON</span>
-        <span className="text-[24px] font-bold text-white font-sans mt-2 leading-none">Google Play</span>
+        <span className="text-[13px] text-text-secondary uppercase tracking-wider font-semibold leading-none">GET IT ON</span>
+        <span className="text-[26px] font-bold text-white font-sans mt-2 leading-none">Google Play</span>
       </div>
     </motion.a>
   );
