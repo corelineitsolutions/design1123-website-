@@ -51,16 +51,19 @@ export function DownloadSection() {
           </motion.p>
           
           <motion.div 
-            className="flex flex-col sm:flex-row items-center justify-center gap-4"
+            className="flex flex-col items-center gap-8 mt-6"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.5 }}
           >
-            <PlayStoreButton />
-            <AppStoreButton />
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-6 w-full">
+              <PlayStoreButton />
+              <AppStoreButton />
+            </div>
+            
             <a href="/contact" className="w-full sm:w-auto">
-              <Button size="lg" variant="outline" className="w-full sm:px-12 py-3 md:py-4.5 text-base sm:text-lg">
+              <Button size="lg" variant="outline" className="w-full sm:px-12 py-3.5 text-base sm:text-lg">
                 Contact Us
               </Button>
             </a>
