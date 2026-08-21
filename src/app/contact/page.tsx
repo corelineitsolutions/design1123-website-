@@ -36,7 +36,7 @@ export default function ContactPage() {
       icon: Headphones,
       label: "Support",
       value: "App & Template Help",
-      href: "/#downloads",
+      href: "/#download",
       hint: "Download issues, billing, template requests",
     },
     {

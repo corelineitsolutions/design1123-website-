@@ -112,7 +112,7 @@ export function PoliticalShowcase() {
 
           {/* 9th box — And Many More */}
           <motion.a
-            href="#downloads"
+            href="#download"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}

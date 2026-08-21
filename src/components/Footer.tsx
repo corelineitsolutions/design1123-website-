@@ -7,7 +7,7 @@ export function Footer() {
       { name: "Templates", href: "/#showcases" }
     ],
     Resources: [
-      { name: "Downloads", href: "/#downloads" },
+      { name: "Download", href: "/#download" },
       { name: "FAQ", href: "/#faq" }
     ],
     Support: [

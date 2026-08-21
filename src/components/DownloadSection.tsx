@@ -30,7 +30,7 @@ export function DownloadSection() {
         </motion.div>
 
         {/* Separate platform download cards */}
-        <div id="downloads" className="grid md:grid-cols-2 gap-8 w-full max-w-4xl mx-auto scroll-mt-28">
+        <div id="download" className="grid md:grid-cols-2 gap-8 w-full max-w-4xl mx-auto scroll-mt-28">
           {/* Play Store Card */}
           <motion.div 
             initial={{ opacity: 0, x: -30 }}
