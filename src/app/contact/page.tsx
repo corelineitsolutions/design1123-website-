@@ -15,8 +15,10 @@ import {
   ArrowRight,
   MessageSquareHeart,
 } from "lucide-react";
+import { useDownloadLink } from "@/components/ui/StoreButtons";
 
 export default function ContactPage() {
+  const { downloadLink } = useDownloadLink();
   const contactDetails = [
     {
       icon: Phone,
@@ -36,7 +38,7 @@ export default function ContactPage() {
       icon: Headphones,
       label: "Support",
       value: "App & Template Help",
-      href: "https://play.google.com/store/apps/details?id=com.coreline.design1123&hl=en_IN",
+      href: downloadLink,
       hint: "Download issues, billing, template requests",
     },
     {

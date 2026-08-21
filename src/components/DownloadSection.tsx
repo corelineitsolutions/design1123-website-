@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Button } from "./ui/Button";
+import { PlayStoreButton, AppStoreButton } from "./ui/StoreButtons";
 
 export function DownloadSection() {
   return (
@@ -56,13 +57,10 @@ export function DownloadSection() {
             viewport={{ once: true }}
             transition={{ delay: 0.5 }}
           >
-            <a href="https://play.google.com/store/apps/details?id=com.coreline.design1123&hl=en_IN" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
-              <Button size="lg" variant="primary" className="w-full px-12 py-5 text-lg">
-                Download App
-              </Button>
-            </a>
+            <PlayStoreButton />
+            <AppStoreButton />
             <a href="/contact" className="w-full sm:w-auto">
-              <Button size="lg" variant="outline" className="w-full px-12 py-5 text-lg">
+              <Button size="lg" variant="outline" className="w-full sm:px-12 py-3 md:py-4.5 text-base sm:text-lg">
                 Contact Us
               </Button>
             </a>

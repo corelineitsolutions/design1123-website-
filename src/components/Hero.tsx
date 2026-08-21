@@ -3,8 +3,11 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "./ui/Button";
+import { PlayStoreButton, AppStoreButton, useDownloadLink } from "./ui/StoreButtons";
 
 export function Hero() {
+  const { downloadLink } = useDownloadLink();
+  
   // Play Store Interactive States
   const [currentScreen, setCurrentScreen] = useState<"playstore" | "app">("playstore");
   const [installState, setInstallState] = useState<"idle" | "pending" | "downloading" | "installing" | "installed">("idle");
@@ -58,7 +61,7 @@ export function Hero() {
 
   const handleInstall = () => {
     if (installState === "idle") {
-      window.open("https://play.google.com/store/apps/details?id=com.coreline.design1123&hl=en_IN", "_blank");
+      window.open(downloadLink, "_blank");
       setInstallState("pending");
     }
   };
@@ -271,17 +274,15 @@ export function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.3 }}
-              className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto"
+              className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto items-center"
             >
-              <a href="https://play.google.com/store/apps/details?id=com.coreline.design1123&hl=en_IN" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
-                <Button size="lg" variant="primary" className="w-full">
-                  Download App
-                </Button>
-              </a>
-              <a href="#categories" className="w-full sm:w-auto">
-                <Button size="lg" variant="outline" className="w-full">
-                  Explore Templates
-                </Button>
+              <PlayStoreButton />
+              <AppStoreButton />
+              <a 
+                href="#categories" 
+                className="text-sm font-medium text-text-secondary hover:text-white transition-colors underline underline-offset-4 mt-2 sm:mt-0 sm:ml-4"
+              >
+                Explore Templates
               </a>
             </motion.div>
           </div>
@@ -347,7 +348,7 @@ export function Hero() {
                         <div className="flex flex-col min-w-0">
                           <h2 className="text-[18px] font-semibold font-sans text-white leading-tight truncate">Design 1123</h2>
                           <a 
-                            href="https://play.google.com/store/apps/details?id=com.coreline.design1123&hl=en_IN" 
+                            href={downloadLink} 
                             target="_blank" 
                             rel="noopener noreferrer" 
                             className="text-[12px] font-medium text-[#8ab4f8] hover:underline mt-0.5"
