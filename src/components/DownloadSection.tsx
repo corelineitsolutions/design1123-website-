@@ -38,14 +38,11 @@ export function DownloadSection() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1 }}
             whileHover={{ y: -8 }}
-            className="glass-card p-8 rounded-3xl border border-white/10 flex flex-col items-center text-center justify-between min-h-[380px] shadow-[0_4px_30px_rgba(0,0,0,0.3)] backdrop-blur-md"
+            className="glass-card p-8 rounded-3xl border border-white/10 flex flex-col items-center text-center justify-between min-h-[300px] shadow-[0_4px_30px_rgba(0,0,0,0.3)] backdrop-blur-md"
           >
             <div className="flex flex-col items-center w-full">
               <img src="/google-play-logo.png?v=2" className="w-24 h-24 object-contain mb-6" alt="Google Play Logo" />
-              <h3 className="text-2xl font-bold text-white mb-2 font-heading">Android Version</h3>
-              <p className="text-text-secondary text-sm mb-6 max-w-xs leading-relaxed">
-                Create political banners, business posts, and personal greetings on your Android phone or tablet.
-              </p>
+              <h3 className="text-2xl font-bold text-white mb-6 font-heading">Android Version</h3>
             </div>
             <a 
               href="https://play.google.com/store/apps/details?id=com.coreline.design1123&hl=en_IN"
@@ -64,14 +61,11 @@ export function DownloadSection() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
             whileHover={{ y: -8 }}
-            className="glass-card p-8 rounded-3xl border border-white/10 flex flex-col items-center text-center justify-between min-h-[380px] shadow-[0_4px_30px_rgba(0,0,0,0.3)] backdrop-blur-md"
+            className="glass-card p-8 rounded-3xl border border-white/10 flex flex-col items-center text-center justify-between min-h-[300px] shadow-[0_4px_30px_rgba(0,0,0,0.3)] backdrop-blur-md"
           >
             <div className="flex flex-col items-center w-full">
               <img src="/app-store-logo.png?v=2" className="w-24 h-24 object-contain mb-6" alt="App Store Logo" />
-              <h3 className="text-2xl font-bold text-white mb-2 font-heading">iOS Version</h3>
-              <p className="text-text-secondary text-sm mb-6 max-w-xs leading-relaxed">
-                Design custom flyers, birthday wishes, and announcements on your iPhone or iPad.
-              </p>
+              <h3 className="text-2xl font-bold text-white mb-6 font-heading">iOS Version</h3>
             </div>
             <a 
               href="https://apps.apple.com/in/app/design-1123/id6798540472"
