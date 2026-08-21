@@ -6,10 +6,8 @@ import {
   Cake, Users, Vote, Building2, 
   HeartPulse, Flag, UserPlus, Trophy, Layers 
 } from "lucide-react";
-import { useDownloadLink } from "./ui/StoreButtons";
 
 export function PoliticalShowcase() {
-  const { downloadLink } = useDownloadLink();
   const cards = [
     { 
       title: "Leader Birthday Wishes", 
@@ -114,9 +112,7 @@ export function PoliticalShowcase() {
 
           {/* 9th box — And Many More */}
           <motion.a
-            href={downloadLink}
-            target="_blank"
-            rel="noopener noreferrer"
+            href="#pricing"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}

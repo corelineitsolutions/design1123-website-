@@ -274,15 +274,17 @@ export function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.3 }}
-              className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto items-center"
+              className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto"
             >
-              <PlayStoreButton />
-              <AppStoreButton />
-              <a 
-                href="#categories" 
-                className="text-sm font-medium text-text-secondary hover:text-white transition-colors underline underline-offset-4 mt-2 sm:mt-0 sm:ml-4"
-              >
-                Explore Templates
+              <a href="#pricing" className="w-full sm:w-auto">
+                <Button size="lg" variant="primary" className="w-full">
+                  Download App
+                </Button>
+              </a>
+              <a href="#categories" className="w-full sm:w-auto">
+                <Button size="lg" variant="outline" className="w-full">
+                  Explore Templates
+                </Button>
               </a>
             </motion.div>
           </div>
