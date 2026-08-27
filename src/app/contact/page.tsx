@@ -21,8 +21,8 @@ export default function ContactPage() {
     {
       icon: Phone,
       label: "Mobile Number",
-      value: "8261090881",
-      href: "tel:+918261090881",
+      value: "+91 86248 51123",
+      href: "tel:+918624851123",
       hint: "Tap to call · Mon–Sat, 10 AM – 7 PM IST",
     },
     {

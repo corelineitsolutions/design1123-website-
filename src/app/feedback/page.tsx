@@ -97,11 +97,11 @@ export default function FeedbackPage() {
                 </p>
                 <div className="space-y-3 text-sm">
                   <a
-                    href="tel:+918261090881"
+                    href="tel:+918624851123"
                     className="flex items-center gap-3 text-text-secondary hover:text-white transition-colors"
                   >
                     <Phone className="w-4 h-4 text-brand-orange" />
-                    8261090881
+                    +91 86248 51123
                   </a>
                   <a
                     href={`mailto:${BRAND.email}`}
