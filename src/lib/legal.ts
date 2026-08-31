@@ -72,8 +72,13 @@ export const privacySections: LegalSection[] = [
     title: "5. Purchases & Subscriptions",
     paragraphs: [
       "We offer 4 standard plans priced at ₹99, ₹299, ₹799, and ₹1999, along with a VIP plan for ₹2999. We also offer a ₹1 trial plan.",
+      "Payments and Recurring Payments: We use third-party payment service providers to process payments made through our application. When you make a payment, certain information such as your name, contact information, transaction details, order or subscription information, payment status, and transaction identifiers may be processed or shared with the applicable payment service provider to facilitate and verify the transaction.",
+      "We do not directly store your complete credit card number, debit card number, UPI PIN, CVV, or other sensitive payment credentials on our servers unless explicitly stated otherwise. Such information may be collected and processed directly by our payment service provider in accordance with its own privacy policy, security practices, and applicable laws and regulations.",
+      "AutoPay and Recurring Payments: Where AutoPay or recurring payment functionality is available, you may choose to authorize recurring payments for eligible subscriptions or services. By authorizing an AutoPay mandate, you permit the applicable payment service provider to process future payments according to the terms, amount, frequency, and duration presented to you at the time of authorization.",
       "Please note: For users who select the ₹1 trial plan, a ₹299 autopay mandate will be initiated and automatically deducted after the 3-day trial period ends.",
-      "Payment details are processed by secure third-party providers. We do not store full card numbers on our servers."
+      "We may receive and process information necessary to manage your subscription or recurring payment, including mandate status, transaction status, transaction identifiers, subscription details, payment dates, and other information required to provide and manage the service.",
+      "You may cancel or modify your recurring payment mandate in accordance with the options provided by the payment service provider and/or through the applicable subscription management mechanism. Cancellation of an AutoPay mandate does not necessarily result in a refund for payments that have already been successfully processed. Refunds, cancellations, and subscription changes are subject to our applicable terms and conditions.",
+      "We use payment and transaction information only for purposes such as processing and verifying payments, activating or renewing subscriptions, providing purchased services, processing refunds, preventing fraud, maintaining transaction records, and complying with applicable legal and regulatory requirements. Payment information may be processed by our third-party payment service providers in accordance with their respective privacy policies and terms of service."
     ]
   },
   {
