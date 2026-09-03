@@ -20,6 +20,8 @@ export function Navbar() {
     { name: "Features", href: "/#features" },
     { name: "Categories", href: "/#categories" },
     { name: "Templates", href: "/#showcases" },
+    { name: "Political Party Banners", href: "/political-party-banners" },
+    { name: "Business Banners", href: "/business-banners" },
     { name: "Download", href: "/#get-app" },
     { name: "FAQ", href: "/#faq" },
     { name: "Contact", href: "/contact" },
