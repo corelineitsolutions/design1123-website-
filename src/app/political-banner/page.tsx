@@ -7,16 +7,17 @@ import { Footer } from "@/components/Footer";
 import Link from "next/link";
 
 const parties = [
-  { name: "Bharatiya Janata Party (BJP)", marathiName: "भारतीय जनता पार्टी", color: "from-orange-500 to-green-500", slug: "bjp", icon: "/images/party-logos/bjp.png" },
-  { name: "Indian National Congress (INC)", marathiName: "भारतीय राष्ट्रीय कांग्रेस", color: "from-blue-500 to-blue-700", slug: "inc", icon: "/images/party-logos/congress.png" },
-  { name: "Shiv Sena", marathiName: "शिवसेना", color: "from-orange-500 to-orange-600", slug: "shiv-sena", icon: "/images/party-logos/shiv-sena.png" },
-  { name: "Shiv Sena (Uddhav Balasaheb Thackeray)", marathiName: "शिवसेना (उद्धव बाळासाहेब ठाकरे)", color: "from-orange-600 to-orange-800", slug: "shiv-sena-ubt", icon: "/images/party-logos/shiv-sena-ubt.png" },
-  { name: "Nationalist Congress Party (NCP)", marathiName: "राष्ट्रवादी कांग्रेस पार्टी", color: "from-blue-400 to-cyan-500", slug: "ncp", icon: "/images/party-logos/ncp-ajit.png" },
-  { name: "Nationalist Congress Party – Sharadchandra Pawar (NCP-SP)", marathiName: "राष्ट्रवादी कांग्रेस पार्टी – शरदचंद्र पवार", color: "from-cyan-600 to-cyan-800", slug: "ncp-sp", icon: "/images/party-logos/ncp-sp.png" },
-  { name: "Maharashtra Navnirman Sena (MNS)", marathiName: "महाराष्ट्र नवनिर्माण सेना", color: "from-orange-400 to-orange-600", slug: "mns", icon: "/images/party-logos/mns.png" },
-  { name: "Aam Aadmi Party (AAP)", marathiName: "आम आदमी पार्टी", color: "from-blue-300 to-blue-500", slug: "aap", icon: "/images/party-logos/aap.png" },
-  { name: "Bahujan Samaj Party (BSP)", marathiName: "बहुजन समाज पार्टी", color: "from-blue-700 to-blue-900", slug: "bsp", icon: "/images/party-logos/bahujan-samaj-party.png" },
-  { name: "Samajwadi Party (SP)", marathiName: "समाजवादी पार्टी", color: "from-red-500 to-green-600", slug: "sp", icon: "/images/party-logos/samajwadi-party.png" },
+  { name: "Bharatiya Janata Party (BJP)", marathiName: "भारतीय जनता पार्टी", color: "from-orange-500 to-green-500", slug: "bjp-election-banner", icon: "/images/party-logos/bjp-banner.png" },
+  { name: "Indian National Congress (INC)", marathiName: "भारतीय राष्ट्रीय कांग्रेस", color: "from-blue-500 to-blue-700", slug: "congress-election-banner", icon: "/images/party-logos/congress-banner.png" },
+  { name: "Shiv Sena", marathiName: "शिवसेना", color: "from-orange-500 to-orange-600", slug: "shiv-sena-banner", icon: "/images/party-logos/shiv-sena-banner.png" },
+  { name: "Shiv Sena (Uddhav Balasaheb Thackeray)", marathiName: "शिवसेना (उद्धव बाळासाहेब ठाकरे)", color: "from-orange-600 to-orange-800", slug: "shiv-sena-ubt-banner", icon: "/images/party-logos/shiv-sena-ubt-banner.png" },
+  { name: "Nationalist Congress Party (NCP)", marathiName: "राष्ट्रवादी कांग्रेस पार्टी", color: "from-blue-400 to-cyan-500", slug: "ncp-election-banner", icon: "/images/party-logos/ncp-ajit-banner.png" },
+  { name: "Nationalist Congress Party – Sharadchandra Pawar (NCP-SP)", marathiName: "राष्ट्रवादी कांग्रेस पार्टी – शरदचंद्र पवार", color: "from-cyan-600 to-cyan-800", slug: "sharad-pawar-banner", icon: "/images/party-logos/nationlised-congess-party-sharad-pawarar-banner.png" },
+  { name: "Maharashtra Navnirman Sena (MNS)", marathiName: "महाराष्ट्र नवनिर्माण सेना", color: "from-orange-400 to-orange-600", slug: "mns-election-banner", icon: "/images/party-logos/mns-banner.png" },
+  { name: "Aam Aadmi Party (AAP)", marathiName: "आम आदमी पार्टी", color: "from-blue-300 to-blue-500", slug: "aap-election-banner", icon: "/images/party-logos/aam-aadmi-party-banner.png" },
+  { name: "Bahujan Samaj Party (BSP)", marathiName: "बहुजन समाज पार्टी", color: "from-blue-700 to-blue-900", slug: "bsp-election-banner", icon: "/images/party-logos/bahujan-samaj-party-banner.png" },
+  { name: "Samajwadi Party (SP)", marathiName: "समाजवादी पार्टी", color: "from-red-500 to-green-600", slug: "samajwadi-party-banner", icon: "/images/party-logos/samajwadi-party-banner.png" },
+  { name: "Apna Dal", marathiName: "अपना दल", color: "from-blue-500 to-red-500", slug: "apna-dal-banner", icon: "/images/party-logos/apna-dal-banner.png" },
 ];
 
 export default function PoliticalPartyBanners() {
@@ -51,7 +52,7 @@ export default function PoliticalPartyBanners() {
         <div className="container mx-auto px-6 lg:px-12">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {parties.map((party, idx) => (
-              <Link href={`/political-party-banners/${party.slug}`} key={party.slug} className="block">
+              <Link href={`/political-banner/${party.slug}`} key={party.slug} className="block">
                 <motion.div
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}

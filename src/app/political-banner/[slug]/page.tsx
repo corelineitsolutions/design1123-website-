@@ -9,16 +9,17 @@ import { notFound } from "next/navigation";
 
 // Party Data
 const partyDetails = {
-  "bjp": { name: "Bharatiya Janata Party (BJP)", shortName: "BJP", image: "/images/politics/bjp.png", color: "text-orange-500", bg: "bg-orange-500", gradient: "from-orange-500/20 to-transparent" },
-  "inc": { name: "Indian National Congress (INC)", shortName: "Congress", image: "/images/politics/congress.png", color: "text-blue-500", bg: "bg-blue-500", gradient: "from-blue-500/20 to-transparent" },
-  "shiv-sena": { name: "Shiv Sena", shortName: "Shiv Sena", image: "/images/politics/shiv sena eknath shinde.png", color: "text-orange-600", bg: "bg-orange-600", gradient: "from-orange-600/20 to-transparent" },
-  "shiv-sena-ubt": { name: "Shiv Sena (UBT)", shortName: "Shiv Sena (UBT)", image: "/images/politics/shivsena ubt.png", color: "text-orange-600", bg: "bg-orange-600", gradient: "from-orange-600/20 to-transparent" },
-  "ncp": { name: "Nationalist Congress Party (NCP)", shortName: "NCP", image: "/images/politics/ajit pawar ncp.png", color: "text-blue-500", bg: "bg-blue-500", gradient: "from-blue-500/20 to-transparent" },
-  "ncp-sp": { name: "NCP – Sharadchandra Pawar", shortName: "NCP-SP", image: "/images/politics/ncp ajit pawar.png", color: "text-cyan-500", bg: "bg-cyan-500", gradient: "from-cyan-500/20 to-transparent" }, // fallback
-  "mns": { name: "Maharashtra Navnirman Sena (MNS)", shortName: "MNS", image: "/images/politics/manase.png", color: "text-yellow-500", bg: "bg-yellow-500", gradient: "from-yellow-500/20 to-transparent" },
-  "aap": { name: "Aam Aadmi Party (AAP)", shortName: "AAP", image: "/images/politics/aam admi party.png", color: "text-blue-400", bg: "bg-blue-400", gradient: "from-blue-400/20 to-transparent" },
-  "bsp": { name: "Bahujan Samaj Party (BSP)", shortName: "BSP", image: "/images/politics/bahujan samaj party.png", color: "text-blue-800", bg: "bg-blue-800", gradient: "from-blue-800/20 to-transparent" },
-  "sp": { name: "Samajwadi Party (SP)", shortName: "SP", image: "/images/politics/aam admi party.png", color: "text-red-500", bg: "bg-red-500", gradient: "from-red-500/20 to-transparent" }, // fallback
+  "bjp-election-banner": { name: "Bharatiya Janata Party (BJP)", shortName: "BJP", image: "/images/politics/bjp-political-banner-design.png", color: "text-orange-500", bg: "bg-orange-500", gradient: "from-orange-500/20 to-transparent" },
+  "congress-election-banner": { name: "Indian National Congress (INC)", shortName: "Congress", image: "/images/politics/congress-election-banner.png", color: "text-blue-500", bg: "bg-blue-500", gradient: "from-blue-500/20 to-transparent" },
+  "shiv-sena-banner": { name: "Shiv Sena", shortName: "Shiv Sena", image: "/images/politics/shiv-sena-political-poster.png", color: "text-orange-600", bg: "bg-orange-600", gradient: "from-orange-600/20 to-transparent" },
+  "shiv-sena-ubt-banner": { name: "Shiv Sena (UBT)", shortName: "Shiv Sena (UBT)", image: "/images/politics/shiv-sena-ubt-election-banner.png", color: "text-orange-600", bg: "bg-orange-600", gradient: "from-orange-600/20 to-transparent" },
+  "ncp-election-banner": { name: "Nationalist Congress Party (NCP)", shortName: "NCP", image: "/images/politics/ncp-election-banner.png", color: "text-blue-500", bg: "bg-blue-500", gradient: "from-blue-500/20 to-transparent" },
+  "sharad-pawar-banner": { name: "NCP – Sharadchandra Pawar", shortName: "NCP-SP", image: "/images/politics/sharad-pawar-political-banner.png", color: "text-cyan-500", bg: "bg-cyan-500", gradient: "from-cyan-500/20 to-transparent" },
+  "mns-election-banner": { name: "Maharashtra Navnirman Sena (MNS)", shortName: "MNS", image: "/images/politics/mns-election-banner.png", color: "text-yellow-500", bg: "bg-yellow-500", gradient: "from-yellow-500/20 to-transparent" },
+  "aap-election-banner": { name: "Aam Aadmi Party (AAP)", shortName: "AAP", image: "/images/politics/aap-election-banner.png", color: "text-blue-400", bg: "bg-blue-400", gradient: "from-blue-400/20 to-transparent" },
+  "bsp-election-banner": { name: "Bahujan Samaj Party (BSP)", shortName: "BSP", image: "/images/politics/bsp-election-banner.png", color: "text-blue-800", bg: "bg-blue-800", gradient: "from-blue-800/20 to-transparent" },
+  "samajwadi-party-banner": { name: "Samajwadi Party (SP)", shortName: "SP", image: "/images/politics/aam admi party.png", color: "text-red-500", bg: "bg-red-500", gradient: "from-red-500/20 to-transparent" },
+  "apna-dal-banner": { name: "Apna Dal (S)", shortName: "Apna Dal", image: "/images/politics/apna-dal-banner.png", color: "text-orange-500", bg: "bg-orange-500", gradient: "from-orange-500/20 to-transparent" },
 };
 
 const features = [
@@ -56,17 +57,20 @@ export default function PartyDetails({ params }: { params: Promise<{ slug: strin
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.6 }}
               >
-                <h1 className="text-4xl lg:text-5xl font-heading font-black tracking-tight text-white leading-tight mb-6">
-                  Create <span className={party.color}>{party.shortName}</span> posters & videos now
+                <h1 className="text-4xl lg:text-5xl font-heading font-black tracking-tight text-white leading-tight mb-4">
+                  <span className={party.color}>{party.shortName}</span> Political Banner Design
                 </h1>
+                <h2 className="text-2xl lg:text-3xl font-semibold text-white/90 mb-4">
+                  {party.shortName} Election Banner
+                </h2>
                 <p className="text-text-secondary text-lg leading-relaxed mb-8">
-                  Top trending posters and videos with personalized texts and images using the Design 1123 app for the {party.name} in these elections.
+                  Create and customize {party.name} political election banners and posters using Design1123.
                 </p>
                 
                 <div className="flex flex-col gap-4">
                   <a href="/#get-app" className="inline-flex items-center justify-center gap-2 bg-brand-orange hover:bg-brand-deep-orange text-white font-bold py-4 px-8 rounded-full transition-all hover:scale-105 shadow-[0_0_20px_rgba(255,138,0,0.3)] w-max">
                     <Download className="w-5 h-5" />
-                    Download Free Posters Now
+                    Edit This Template
                   </a>
                   <div className="flex flex-row gap-2 mt-4">
                     <div className="scale-[0.55] origin-top-left w-[176px] h-[60px]">
@@ -95,7 +99,7 @@ export default function PartyDetails({ params }: { params: Promise<{ slug: strin
                 <div className="relative z-10 w-[450px] max-w-full drop-shadow-2xl flex justify-center">
                   <img 
                     src={party.image} 
-                    alt={`${party.shortName} Banners`} 
+                    alt={`${party.shortName} Political Banner Design`} 
                     className="w-full h-auto object-contain drop-shadow-[0_20px_50px_rgba(0,0,0,0.5)]"
                     onError={(e) => {
                       e.currentTarget.src = "/logo.png";
