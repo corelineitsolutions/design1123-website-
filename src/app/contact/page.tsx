@@ -21,8 +21,8 @@ export default function ContactPage() {
     {
       icon: Phone,
       label: "Mobile Number",
-      value: "8261090881",
-      href: "tel:+918261090881",
+      value: "+91 86248 51123",
+      href: "tel:+918624851123",
       hint: "Tap to call · Mon–Sat, 10 AM – 7 PM IST",
     },
     {
@@ -36,7 +36,7 @@ export default function ContactPage() {
       icon: Headphones,
       label: "Support",
       value: "App & Template Help",
-      href: "https://play.google.com/store/apps/details?id=com.coreline.design1123&hl=en_IN",
+      href: "/#get-app",
       hint: "Download issues, billing, template requests",
     },
     {

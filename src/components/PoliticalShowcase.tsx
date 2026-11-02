@@ -112,9 +112,7 @@ export function PoliticalShowcase() {
 
           {/* 9th box — And Many More */}
           <motion.a
-            href="https://play.google.com/store/apps/details?id=com.coreline.design1123&hl=en_IN"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="#get-app"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}

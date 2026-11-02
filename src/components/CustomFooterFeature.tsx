@@ -77,7 +77,7 @@ export function CustomFooterFeature() {
                 </div>
                 {/* Simulated fields */}
                 <div className="flex justify-between items-center text-[9px] text-white">
-                  <span>📞 +91 8261090881</span>
+                  <span>📞 +91 86248 51123</span>
                   <span>📍 New Delhi, India</span>
                   <div className="w-5 h-5 bg-white/10 rounded flex items-center justify-center text-[7px]">QR</div>
                 </div>

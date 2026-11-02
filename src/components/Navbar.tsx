@@ -4,7 +4,6 @@ import { useState, useEffect } from "react";
 import { motion, useScroll } from "framer-motion";
 import { Button } from "./ui/Button";
 import { Menu, X } from "lucide-react";
-
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
@@ -21,7 +20,9 @@ export function Navbar() {
     { name: "Features", href: "/#features" },
     { name: "Categories", href: "/#categories" },
     { name: "Templates", href: "/#showcases" },
-    { name: "Pricing", href: "/#pricing" },
+    { name: "Political Party Banners", href: "/political-banner" },
+    { name: "Business Banners", href: "/business-banners" },
+    { name: "Download", href: "/#get-app" },
     { name: "FAQ", href: "/#faq" },
     { name: "Contact", href: "/contact" },
   ];
@@ -62,7 +63,7 @@ export function Navbar() {
         </div>
 
         <div className="hidden xl:block">
-          <a href="https://play.google.com/store/apps/details?id=com.coreline.design1123&hl=en_IN" target="_blank" rel="noopener noreferrer">
+          <a href="#get-app">
             <Button variant="primary" size="md">
               Download App
             </Button>
@@ -98,7 +99,7 @@ export function Navbar() {
               {link.name}
             </a>
           ))}
-          <a href="https://play.google.com/store/apps/details?id=com.coreline.design1123&hl=en_IN" target="_blank" rel="noopener noreferrer" className="w-full mt-6 block">
+          <a href="#get-app" onClick={() => setIsOpen(false)} className="w-full mt-6 block">
             <Button variant="primary" size="lg" className="w-full py-4 text-base">
               Download App
             </Button>

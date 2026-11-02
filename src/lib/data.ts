@@ -1,7 +1,7 @@
 export const BRAND = {
   name: "Design 1123",
   tagline: "Your Ultimate Business Branding Studio",
-  phone: "+91 8261090881",
+  phone: "+91 8624851123",
   email: "info@design1123.com",
   users: "2.5 million+",
 } as const;
@@ -22,7 +22,7 @@ export const footerLinks = {
     { label: "FAQ", href: "/#home" },
     { label: "Industries", href: "/#industries" },
     { label: "Quotes", href: "/#home" },
-    { label: "Free Logo Maker", href: "/#download" },
+    { label: "Free Logo Maker", href: "/#get-app" },
     { label: "All Events", href: "/#events" },
   ],
   legal: [
